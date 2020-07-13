@@ -22,7 +22,7 @@ pod 'LocaLite'
 
 ## Author
 
-Yoni Goriachnick, yonig770@gmail.com
+Yonathan Goriachnick, yonig770@gmail.com
 
 ## License
 
