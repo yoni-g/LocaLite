@@ -1,0 +1,6 @@
+framework module Pods_LocaLite_Example {
+  umbrella header "Pods-LocaLite_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

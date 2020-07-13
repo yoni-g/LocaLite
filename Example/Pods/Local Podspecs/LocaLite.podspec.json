@@ -1,0 +1,22 @@
+{
+  "name": "LocaLite",
+  "version": "0.1.0",
+  "summary": "A short description of LocaLite.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Yoni Goriachnick/LocaLite",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Yoni Goriachnick": "yonig770@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Yoni Goriachnick/LocaLite.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LocaLite/Classes/**/*"
+}

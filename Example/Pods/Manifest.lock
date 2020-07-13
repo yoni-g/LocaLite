@@ -1,0 +1,16 @@
+PODS:
+  - LocaLite (0.1.0)
+
+DEPENDENCIES:
+  - LocaLite (from `../`)
+
+EXTERNAL SOURCES:
+  LocaLite:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LocaLite: 11376708aeffe092b4458b4f941ac3b44037f4b6
+
+PODFILE CHECKSUM: 1d0bd896ce7893733ddaed9ad8afdd5c26a52239
+
+COCOAPODS: 1.9.1
