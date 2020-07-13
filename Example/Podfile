@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LocaLite_Example' do
+  pod 'LocaLite', :path => '../'
+
+  target 'LocaLite_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
