@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import LocaLite
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        LocaLite.printName()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

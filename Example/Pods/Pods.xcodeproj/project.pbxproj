@@ -14,7 +14,7 @@
 		65E211A2DC9F0BCA45C17A5AD55BEAFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		9F8D1DD3B0F9BB8D74889197C8B843B5 /* Pods-LocaLite_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 882B8FC8DD01EB5484AB5A7B2B058210 /* Pods-LocaLite_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7EFC2A56AFC2314E3C70E92137BDFA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		CBF7E04F45AD11498F1286638CCF80D0 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD67C604208AF04725669B47EFEE14 /* ReplaceMe.swift */; };
+		CBF7E04F45AD11498F1286638CCF80D0 /* LocaLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD67C604208AF04725669B47EFEE14 /* LocaLite.swift */; };
 		DD6FF7D1B43F44328709100BF14FD811 /* Pods-LocaLite_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA162DD1B319C1380DCB47B95E206D9 /* Pods-LocaLite_Tests-dummy.m */; };
 		F9E05BC20147EB3EBA3562C315525AE6 /* Pods-LocaLite_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A593ED39C1A9D9D621989C8C4376BC6 /* Pods-LocaLite_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -44,29 +44,29 @@
 		2B6BC13719CF8CBC0474E00B4196BC0D /* Pods-LocaLite_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocaLite_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2FA162DD1B319C1380DCB47B95E206D9 /* Pods-LocaLite_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocaLite_Tests-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		36DDFBDDBE9140BE15EF1071C7991EF4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		36DDFBDDBE9140BE15EF1071C7991EF4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		37C64E12DEC5D62A6C95B8F2F39DA865 /* LocaLite-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocaLite-umbrella.h"; sourceTree = "<group>"; };
 		3D5433BCD2D6E3EE365CC5AC5A0B21DA /* Pods-LocaLite_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocaLite_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		63649EAEF5EA8DF6F8EC6906C96BB1FE /* Pods-LocaLite_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocaLite_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		66239C7B89F74721780B9541FF406DC8 /* LocaLite-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LocaLite-Info.plist"; sourceTree = "<group>"; };
 		67F3E5DA89EABC5E578D1486928126BD /* Pods-LocaLite_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocaLite_Example.modulemap"; sourceTree = "<group>"; };
-		7BB9A0DB05D62DF3454F3A8EF5C67507 /* LocaLite.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LocaLite.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7BB9A0DB05D62DF3454F3A8EF5C67507 /* LocaLite.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LocaLite.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7FFA2EB4957F925CE560AA244B0BCB4F /* LocaLite-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocaLite-prefix.pch"; sourceTree = "<group>"; };
 		81E3F2E6F13FAFA5E2A60F0F6FD96A56 /* Pods-LocaLite_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocaLite_Example.release.xcconfig"; sourceTree = "<group>"; };
 		882B8FC8DD01EB5484AB5A7B2B058210 /* Pods-LocaLite_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocaLite_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8B501815303AB479216C9BE0C8157795 /* LocaLite.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LocaLite.modulemap; sourceTree = "<group>"; };
-		9855A8910ED24F3983D0555F84CC2980 /* Pods_LocaLite_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocaLite_Tests.framework; path = "Pods-LocaLite_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9855A8910ED24F3983D0555F84CC2980 /* Pods_LocaLite_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocaLite_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A593ED39C1A9D9D621989C8C4376BC6 /* Pods-LocaLite_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocaLite_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ADBD67C604208AF04725669B47EFEE14 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = LocaLite/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ADBD67C604208AF04725669B47EFEE14 /* LocaLite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocaLite.swift; path = LocaLite/Classes/LocaLite.swift; sourceTree = "<group>"; };
 		B4F8947B1DF9983A1455349BB28BD1FC /* LocaLite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocaLite.release.xcconfig; sourceTree = "<group>"; };
 		B622C661933D63A5FB7032C78A8E3C61 /* LocaLite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LocaLite-dummy.m"; sourceTree = "<group>"; };
 		B7E15A5D085810CF4DF7A412D8A26BEA /* Pods-LocaLite_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocaLite_Tests-Info.plist"; sourceTree = "<group>"; };
-		BF3DDA7225FA6D0FC85F88285DC31448 /* Pods_LocaLite_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocaLite_Example.framework; path = "Pods-LocaLite_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3DDA7225FA6D0FC85F88285DC31448 /* Pods_LocaLite_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocaLite_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAE8346B21F7D36E97F51507C9CEA97 /* LocaLite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocaLite.debug.xcconfig; sourceTree = "<group>"; };
 		E1174FFAD669F8FC7295AB76241121E6 /* Pods-LocaLite_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocaLite_Example-frameworks.sh"; sourceTree = "<group>"; };
-		E6C108BF6CB02B07E196CC012391E35E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		E91F167EE394AFA047D800BE688934D1 /* LocaLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LocaLite.framework; path = LocaLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6C108BF6CB02B07E196CC012391E35E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E91F167EE394AFA047D800BE688934D1 /* LocaLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocaLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2709C30FEF5A5F0F7135FA96B70156B /* Pods-LocaLite_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocaLite_Example-dummy.m"; sourceTree = "<group>"; };
 		FCA3286FB4840D9150C56C6725060314 /* Pods-LocaLite_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocaLite_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FEEB2EDD63B139B5FD40358ABC8BCCAF /* Pods-LocaLite_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocaLite_Example-Info.plist"; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		0E35775F45AC07B420B4173B614C9695 /* LocaLite */ = {
 			isa = PBXGroup;
 			children = (
-				ADBD67C604208AF04725669B47EFEE14 /* ReplaceMe.swift */,
+				ADBD67C604208AF04725669B47EFEE14 /* LocaLite.swift */,
 				78CAE34DDEA8EEAC004A76E6DA7D5E86 /* Pod */,
 				8687FF971261AC4878C6E1DC3B9AF062 /* Support Files */,
 			);
@@ -376,7 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C1C462285EC28AACE5C05C239B51F3C /* LocaLite-dummy.m in Sources */,
-				CBF7E04F45AD11498F1286638CCF80D0 /* ReplaceMe.swift in Sources */,
+				CBF7E04F45AD11498F1286638CCF80D0 /* LocaLite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,8 +623,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
