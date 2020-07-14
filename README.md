@@ -1,11 +1,13 @@
 # LocaLite
 
-[![CI Status](https://img.shields.io/travis/Yoni Goriachnick/LocaLite.svg?style=flat)](https://travis-ci.org/Yoni Goriachnick/LocaLite)
+### A lite Localization SDK for iOS apps written in Swift
+
+[![CI Status](https://img.shields.io/travis/yoni-g/LocaLite.svg?style=flat)](https://travis-ci.org/yoni-g/LocaLite)
 [![Version](https://img.shields.io/cocoapods/v/LocaLite.svg?style=flat)](https://cocoapods.org/pods/LocaLite)
 [![License](https://img.shields.io/cocoapods/l/LocaLite.svg?style=flat)](https://cocoapods.org/pods/LocaLite)
 [![Platform](https://img.shields.io/cocoapods/p/LocaLite.svg?style=flat)](https://cocoapods.org/pods/LocaLite)
 
-## Example
+## Installation
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
