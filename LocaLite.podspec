@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-A lite weight, easy-to-use Localization SDK for iOS apps written in Swift
+A lightweight, easy-to-use Localization SDK for iOS apps written in Swift
                        DESC
 
   s.homepage         = 'https://github.com/yoni-g/LocaLite'
@@ -28,7 +28,7 @@ A lite weight, easy-to-use Localization SDK for iOS apps written in Swift
   s.source           = { :git => 'https://github.com/yoni-g/LocaLite.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'LocaLite/Classes/**/*'
   
