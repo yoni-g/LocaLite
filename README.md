@@ -1,6 +1,6 @@
 # LocaLite
 
-### A lite Localization SDK for iOS apps written in Swift
+### A tiny Localization SDK for iOS apps written in Swift
 
 [![CI Status](https://img.shields.io/travis/yoni-g/LocaLite.svg?style=flat)](https://travis-ci.org/yoni-g/LocaLite)
 [![Version](https://img.shields.io/cocoapods/v/LocaLite.svg?style=flat)](https://cocoapods.org/pods/LocaLite)

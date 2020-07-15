@@ -14,8 +14,20 @@
 		65E211A2DC9F0BCA45C17A5AD55BEAFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		9F8D1DD3B0F9BB8D74889197C8B843B5 /* Pods-LocaLite_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 882B8FC8DD01EB5484AB5A7B2B058210 /* Pods-LocaLite_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7EFC2A56AFC2314E3C70E92137BDFA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		CBF7E04F45AD11498F1286638CCF80D0 /* LocaLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD67C604208AF04725669B47EFEE14 /* LocaLite.swift */; };
 		DD6FF7D1B43F44328709100BF14FD811 /* Pods-LocaLite_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA162DD1B319C1380DCB47B95E206D9 /* Pods-LocaLite_Tests-dummy.m */; };
+		F0F2512124BF54B200EDE4A4 /* UIBarButtonItem+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511824BF54B200EDE4A4 /* UIBarButtonItem+Localized.swift */; };
+		F0F2512224BF54B200EDE4A4 /* UISegmentedControl+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511924BF54B200EDE4A4 /* UISegmentedControl+LocalizedText.swift */; };
+		F0F2512324BF54B200EDE4A4 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511A24BF54B200EDE4A4 /* String+localized.swift */; };
+		F0F2512424BF54B200EDE4A4 /* UINavigationItem+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511B24BF54B200EDE4A4 /* UINavigationItem+Localized.swift */; };
+		F0F2512524BF54B200EDE4A4 /* UILabel+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511C24BF54B200EDE4A4 /* UILabel+LocalizedText.swift */; };
+		F0F2512624BF54B200EDE4A4 /* UITabBarItem+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511D24BF54B200EDE4A4 /* UITabBarItem+LocalizedText.swift */; };
+		F0F2512724BF54B200EDE4A4 /* UIImage+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511E24BF54B200EDE4A4 /* UIImage+Localization.swift */; };
+		F0F2512824BF54B200EDE4A4 /* UIButton+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511F24BF54B200EDE4A4 /* UIButton+LocalizedText.swift */; };
+		F0F2512924BF54B200EDE4A4 /* UITextField+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2512024BF54B200EDE4A4 /* UITextField+LocalizedText.swift */; };
+		F0F2512D24BF555E00EDE4A4 /* LocaLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2512C24BF555E00EDE4A4 /* LocaLite.swift */; };
+		F0F2512F24BF55D600EDE4A4 /* UIView+Semantic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2512E24BF55D600EDE4A4 /* UIView+Semantic.swift */; };
+		F0F2513124BF560400EDE4A4 /* UICollectionViewFlowLayout+ScrollDir.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2513024BF560400EDE4A4 /* UICollectionViewFlowLayout+ScrollDir.swift */; };
+		F0F2513324BF582B00EDE4A4 /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2513224BF582B00EDE4A4 /* UIFont+CustomFonts.swift */; };
 		F9E05BC20147EB3EBA3562C315525AE6 /* Pods-LocaLite_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A593ED39C1A9D9D621989C8C4376BC6 /* Pods-LocaLite_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -58,7 +70,6 @@
 		9855A8910ED24F3983D0555F84CC2980 /* Pods_LocaLite_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocaLite_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A593ED39C1A9D9D621989C8C4376BC6 /* Pods-LocaLite_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocaLite_Example-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		ADBD67C604208AF04725669B47EFEE14 /* LocaLite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocaLite.swift; path = LocaLite/Classes/LocaLite.swift; sourceTree = "<group>"; };
 		B4F8947B1DF9983A1455349BB28BD1FC /* LocaLite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocaLite.release.xcconfig; sourceTree = "<group>"; };
 		B622C661933D63A5FB7032C78A8E3C61 /* LocaLite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LocaLite-dummy.m"; sourceTree = "<group>"; };
 		B7E15A5D085810CF4DF7A412D8A26BEA /* Pods-LocaLite_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocaLite_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -67,6 +78,19 @@
 		E1174FFAD669F8FC7295AB76241121E6 /* Pods-LocaLite_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocaLite_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E6C108BF6CB02B07E196CC012391E35E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E91F167EE394AFA047D800BE688934D1 /* LocaLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocaLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0F2511824BF54B200EDE4A4 /* UIBarButtonItem+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Localized.swift"; sourceTree = "<group>"; };
+		F0F2511924BF54B200EDE4A4 /* UISegmentedControl+LocalizedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+LocalizedText.swift"; sourceTree = "<group>"; };
+		F0F2511A24BF54B200EDE4A4 /* String+localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
+		F0F2511B24BF54B200EDE4A4 /* UINavigationItem+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Localized.swift"; sourceTree = "<group>"; };
+		F0F2511C24BF54B200EDE4A4 /* UILabel+LocalizedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+LocalizedText.swift"; sourceTree = "<group>"; };
+		F0F2511D24BF54B200EDE4A4 /* UITabBarItem+LocalizedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+LocalizedText.swift"; sourceTree = "<group>"; };
+		F0F2511E24BF54B200EDE4A4 /* UIImage+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Localization.swift"; sourceTree = "<group>"; };
+		F0F2511F24BF54B200EDE4A4 /* UIButton+LocalizedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+LocalizedText.swift"; sourceTree = "<group>"; };
+		F0F2512024BF54B200EDE4A4 /* UITextField+LocalizedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+LocalizedText.swift"; sourceTree = "<group>"; };
+		F0F2512C24BF555E00EDE4A4 /* LocaLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocaLite.swift; path = LocaLite/Classes/LocaLite.swift; sourceTree = "<group>"; };
+		F0F2512E24BF55D600EDE4A4 /* UIView+Semantic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Semantic.swift"; sourceTree = "<group>"; };
+		F0F2513024BF560400EDE4A4 /* UICollectionViewFlowLayout+ScrollDir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+ScrollDir.swift"; sourceTree = "<group>"; };
+		F0F2513224BF582B00EDE4A4 /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
 		F2709C30FEF5A5F0F7135FA96B70156B /* Pods-LocaLite_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocaLite_Example-dummy.m"; sourceTree = "<group>"; };
 		FCA3286FB4840D9150C56C6725060314 /* Pods-LocaLite_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocaLite_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FEEB2EDD63B139B5FD40358ABC8BCCAF /* Pods-LocaLite_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocaLite_Example-Info.plist"; sourceTree = "<group>"; };
@@ -103,7 +127,8 @@
 		0E35775F45AC07B420B4173B614C9695 /* LocaLite */ = {
 			isa = PBXGroup;
 			children = (
-				ADBD67C604208AF04725669B47EFEE14 /* LocaLite.swift */,
+				F0F2512C24BF555E00EDE4A4 /* LocaLite.swift */,
+				F0F2511724BF54B200EDE4A4 /* Extensions */,
 				78CAE34DDEA8EEAC004A76E6DA7D5E86 /* Pod */,
 				8687FF971261AC4878C6E1DC3B9AF062 /* Support Files */,
 			);
@@ -211,6 +236,26 @@
 				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0F2511724BF54B200EDE4A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F0F2512E24BF55D600EDE4A4 /* UIView+Semantic.swift */,
+				F0F2511824BF54B200EDE4A4 /* UIBarButtonItem+Localized.swift */,
+				F0F2513224BF582B00EDE4A4 /* UIFont+CustomFonts.swift */,
+				F0F2511924BF54B200EDE4A4 /* UISegmentedControl+LocalizedText.swift */,
+				F0F2513024BF560400EDE4A4 /* UICollectionViewFlowLayout+ScrollDir.swift */,
+				F0F2511A24BF54B200EDE4A4 /* String+localized.swift */,
+				F0F2511B24BF54B200EDE4A4 /* UINavigationItem+Localized.swift */,
+				F0F2511C24BF54B200EDE4A4 /* UILabel+LocalizedText.swift */,
+				F0F2511D24BF54B200EDE4A4 /* UITabBarItem+LocalizedText.swift */,
+				F0F2511E24BF54B200EDE4A4 /* UIImage+Localization.swift */,
+				F0F2511F24BF54B200EDE4A4 /* UIButton+LocalizedText.swift */,
+				F0F2512024BF54B200EDE4A4 /* UITextField+LocalizedText.swift */,
+			);
+			name = Extensions;
+			path = LocaLite/Classes/Extensions;
 			sourceTree = "<group>";
 		};
 		F86113048156761CDBF8FC853B001F12 /* Products */ = {
@@ -375,8 +420,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0F2512F24BF55D600EDE4A4 /* UIView+Semantic.swift in Sources */,
+				F0F2512824BF54B200EDE4A4 /* UIButton+LocalizedText.swift in Sources */,
+				F0F2512724BF54B200EDE4A4 /* UIImage+Localization.swift in Sources */,
+				F0F2512524BF54B200EDE4A4 /* UILabel+LocalizedText.swift in Sources */,
+				F0F2513324BF582B00EDE4A4 /* UIFont+CustomFonts.swift in Sources */,
 				2C1C462285EC28AACE5C05C239B51F3C /* LocaLite-dummy.m in Sources */,
-				CBF7E04F45AD11498F1286638CCF80D0 /* LocaLite.swift in Sources */,
+				F0F2512424BF54B200EDE4A4 /* UINavigationItem+Localized.swift in Sources */,
+				F0F2513124BF560400EDE4A4 /* UICollectionViewFlowLayout+ScrollDir.swift in Sources */,
+				F0F2512324BF54B200EDE4A4 /* String+localized.swift in Sources */,
+				F0F2512D24BF555E00EDE4A4 /* LocaLite.swift in Sources */,
+				F0F2512124BF54B200EDE4A4 /* UIBarButtonItem+Localized.swift in Sources */,
+				F0F2512624BF54B200EDE4A4 /* UITabBarItem+LocalizedText.swift in Sources */,
+				F0F2512224BF54B200EDE4A4 /* UISegmentedControl+LocalizedText.swift in Sources */,
+				F0F2512924BF54B200EDE4A4 /* UITextField+LocalizedText.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,8 +479,9 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LocaLite/LocaLite-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LocaLite/LocaLite-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.0.1;
 				MODULEMAP_FILE = "Target Support Files/LocaLite/LocaLite.modulemap";
 				PRODUCT_MODULE_NAME = LocaLite;
 				PRODUCT_NAME = LocaLite;
@@ -521,8 +579,9 @@
 				GCC_PREFIX_HEADER = "Target Support Files/LocaLite/LocaLite-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/LocaLite/LocaLite-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 0.0.1;
 				MODULEMAP_FILE = "Target Support Files/LocaLite/LocaLite.modulemap";
 				PRODUCT_MODULE_NAME = LocaLite;
 				PRODUCT_NAME = LocaLite;
