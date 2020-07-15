@@ -1,16 +1,16 @@
 //
 //  UIImage+Localization.swift
-//  Diplomat-iOS
+//  LocaLite
 //
 //  Created by Yoni on 15/07/2019.
-//  Copyright © 2019 BA Link. All rights reserved.
+//  Copyright © 2020 Yonathan Goriachnick. All rights reserved.
 //
 
 import UIKit
 
 extension UIImage{
     func setLocalizedDirection() -> UIImage{
-        if(LocalizationUtils.isRtl()){
+        if(LocaLite.isRtl()){
             if #available(iOS 10.0, *) {
                 return self.withHorizontallyFlippedOrientation()
             } else {

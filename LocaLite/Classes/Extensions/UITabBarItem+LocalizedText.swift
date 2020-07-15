@@ -1,9 +1,9 @@
 //
 //  UITabBarItem+LocalizedText.swift
-//  Diplomat-iOS
+//  LocaLite
 //
 //  Created by Leah Vogel on 5/21/17.
-//  Copyright © 2017 BA Link. All rights reserved.
+//  Copyright © 2020 Yonathan Goriachnick. All rights reserved.
 //
 
 import UIKit

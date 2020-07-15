@@ -1,9 +1,9 @@
 //
 //  UIView+Semantic.swift
-//  Diplomat-iOS
+//  LocaLite
 //
 //  Created by Yoni770 on 20/06/2019.
-//  Copyright © 2019 BA Link. All rights reserved.
+//  Copyright © 2020 Yonathan Goriachnick All rights reserved.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import UIKit
 extension UIView{
     open override func awakeFromNib() {
         super.awakeFromNib()
-        if LocalizationUtils.isRtl() && !isForceLTRSemanticView(){
+        if LocaLite.isRtl() && !isForceLTRSemanticView(){
             self.semanticContentAttribute = .forceRightToLeft
         } else {
 //            print(self.accessibilityLabel)
@@ -26,9 +26,9 @@ extension UIView{
         }
         //print(self.accessibilityLabel)
         guard let accessibilityLabel = self.accessibilityLabel else {
-            return LocalizationUtils.forceLTRViews.contains(String(describing: type(of: self)))
+            return LocaLite.forceLTRViews.contains(String(describing: type(of: self)))
         }
 
-        return LocalizationUtils.forceLTRViews.contains(accessibilityLabel)
+        return LocaLite.forceLTRViews.contains(accessibilityLabel)
     }
 }

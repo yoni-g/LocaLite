@@ -1,15 +1,15 @@
 //
-//  LocalizationUtils.swift
-//  Diplomat-iOS
+//  LocaLite.swift
+//  LocaLite
 //
 //  Created by Yoni770 on 30/05/2019.
-//  Copyright © 2019 BA Link. All rights reserved.
+//  Copyright © 2020 Yonathan Goriachnick. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class LocalizationUtils {
+class LocaLite {
 
     static let APPLE_APP_LANG_SUPPORT = "AppleLanguages"
     static var bundleForLanguage: Bundle = Bundle()

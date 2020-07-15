@@ -1,9 +1,9 @@
 //
 //  UINavigationItem+Localized.swift
-//  Diplomat-iOS
+//  LocaLite
 //
 //  Created by Yonathan Goriachnick on 26/12/2019.
-//  Copyright © 2019 Diplomat. All rights reserved.
+//  Copyright © 2020 Yonathan Goriachnick. All rights reserved.
 //
 
 import UIKit

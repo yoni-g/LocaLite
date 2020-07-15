@@ -1,9 +1,9 @@
 //
 //  UICollectionViewFlowLayout+ScrollDir.swift
-//  Diplomat-iOS
+//  LocaLite
 //
 //  Created by Yoni770 on 20/06/2019.
-//  Copyright © 2019 BA Link. All rights reserved.
+//  Copyright © 2020 Yonathan Goriachnick. All rights reserved.
 //
 
 import UIKit
@@ -11,7 +11,7 @@ import UIKit
 extension UICollectionViewFlowLayout {
     
     open override var flipsHorizontallyInOppositeLayoutDirection: Bool {
-        if LocalizationUtils.isRtl(){
+        if LocaLite.isRtl(){
             return true
         }
         return false
