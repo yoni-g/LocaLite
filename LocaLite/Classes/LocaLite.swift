@@ -51,13 +51,13 @@ final class LocaLite {
     
     public var forceLTRViews: [String] {
         get{
-            LocaLite.forceLTRViews ?? []
+            return LocaLite.forceLTRViews ?? []
         }
     }
     
     public var bundleForLanguage: Bundle {
         get{
-            LocaLite.bundleForLanguage
+            return LocaLite.bundleForLanguage
         }
     }
     
