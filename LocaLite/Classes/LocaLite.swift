@@ -9,19 +9,78 @@
 import Foundation
 import UIKit
 
-class LocaLite {
+enum LocaLiteCofing: Hashable {
+    case supportRTL(_  willSupport: Bool)
+    case forceLTRViews(_  viewNames: [String])
+    case supportedLanguagesCodes(_  languages: [String])
+    case defaultLanguageCode(_ defaultLanguage: String)
+//    case onLanguageChanged(_ closure: ()->())
+}
 
-    static let APPLE_APP_LANG_SUPPORT = "AppleLanguages"
-    static var bundleForLanguage: Bundle = Bundle()
-    static let forceLTRViews: [String] = ["NavBar", "navBar", "UINavigationBar","loadingView"]
+//extension LocaLiteCofing{
+//    var type<T> -> T{
+//
+//    }
+//}
+//struct testing {
+//
+//    init() {
+//
+//        let configs : [LocaLiteCofing] = [
+//            .supportRTL(true),
+//            .forceLTRViews(["SomeView"]),
+//            .supportedLanguagesCodes(["he","fr","en"]),
+//            .defaultLanguageCode("en")
+//        ]
+//
+//        LocaLite.config(configs)
+//    }
+//}
+
+final class LocaLite {
+
+    private static let APPLE_APP_LANG_SUPPORT = "AppleLanguages"
+    private static var bundleForLanguage: Bundle = Bundle()
     
-    init() {
-        
+    // config settings
+    private static var supportRTL: Bool?
+    private static var forceLTRViews: [String]?
+    private static var supportedLanguagesCodes: [String]?
+    private static var defaultLanguageCode: String?
+    private static var onLanguageChanged: (()->())?
+    
+    public var forceLTRViews: [String] {
+        get{
+            return LocaLite.forceLTRViews ?? []
+        }
     }
     
-    func config(){
-        
+    public var bundleForLanguage: Bundle {
+        get{
+            return LocaLite.bundleForLanguage
+        }
     }
+    
+    private init() {
+//        forceLTRViews = false
+    }
+    
+    public static let shared = LocaLite()
+    
+    public static func config(_ configs: [LocaLiteCofing]){
+//        for config in configs{
+//            switch config {
+//            case .defaultLanguageCode(let defalut):
+//                print(defalut)
+//            default:
+//
+//            }
+//        }
+//        let support =
+//        let str: NSAttributedStringKey = .shadow
+    }
+    
+    
     
     // MARK: bundle settings
     static func getBundleLanguages(_ langCode: String?) -> Bundle{
