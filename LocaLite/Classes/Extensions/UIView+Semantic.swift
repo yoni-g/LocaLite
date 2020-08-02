@@ -26,9 +26,9 @@ extension UIView{
         }
         //print(self.accessibilityLabel)
         guard let accessibilityLabel = self.accessibilityLabel else {
-            return LocaLite.forceLTRViews.contains(String(describing: type(of: self)))
+            return LocaLite.shared.forceLTRViews.contains(String(describing: type(of: self)))
         }
 
-        return LocaLite.forceLTRViews.contains(accessibilityLabel)
+        return LocaLite.shared.forceLTRViews.contains(accessibilityLabel)
     }
 }

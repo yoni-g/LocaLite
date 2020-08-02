@@ -49,6 +49,17 @@ final class LocaLite {
     private static var defaultLanguageCode: String?
     private static var onLanguageChanged: (()->())?
     
+    public var forceLTRViews: [String] {
+        get{
+            LocaLite.forceLTRViews ?? []
+        }
+    }
+    
+    public var bundleForLanguage: Bundle {
+        get{
+            LocaLite.bundleForLanguage
+        }
+    }
     
     private init() {
 //        forceLTRViews = false
