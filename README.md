@@ -7,20 +7,20 @@
 [![License](https://img.shields.io/cocoapods/l/LocaLite.svg?style=flat)](https://cocoapods.org/pods/LocaLite)
 [![Platform](https://img.shields.io/cocoapods/p/LocaLite.svg?style=flat)](https://cocoapods.org/pods/LocaLite)
 
-## Installation
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
 
 ## Installation
 
 LocaLite is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+it, simply add the following line to your Podfile and run `pod install`:
 
 ```ruby
 pod 'LocaLite'
 ```
+## Requirements
+
+## Test-run
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Author
 
