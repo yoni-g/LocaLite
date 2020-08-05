@@ -8,7 +8,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/LocaLite.svg?style=flat)](https://cocoapods.org/pods/LocaLite)
 
 ## Features
-Easily manage user language and automatic on-the-fly language change without the hustle of maintaining dozens of string files. 
+Easily manage user language and automatic on-the-fly language change without the hustle of maintaining dozens of string files and without creating hundreds of unnecessary IB outlets. 
 
 ## Installation
 
