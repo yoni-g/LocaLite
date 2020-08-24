@@ -40,13 +40,14 @@ enum LocaLiteCofing: Hashable {
 final class LocaLite {
 
     private static let APPLE_APP_LANG_SUPPORT = "AppleLanguages"
+    private static let LocaLite_SELECTED_LANG = "LocaLite_SelectedLanguage"
     private static var bundleForLanguage: Bundle = Bundle()
     
     // config settings
     private static var supportRTL: Bool?
     private static var forceLTRViews: [String]?
     private static var supportedLanguagesCodes: [String]?
-    private static var defaultLanguageCode: String?
+    private static var defaultLanguageCode: String? = "en"
     private static var onLanguageChanged: (()->())?
     
     public var forceLTRViews: [String] {
@@ -60,6 +61,20 @@ final class LocaLite {
             return LocaLite.bundleForLanguage
         }
     }
+    
+    public var defaultAppLanguageCode: String?{
+        get{
+            return LocaLite.defaultLanguageCode
+        }
+    }
+    
+//    public var defaultAppLanguageLabel: String?{
+//        get{
+//
+//            let local = Locale(identifier: LocaLite.defaultLanguageCode ?? "en")
+//            return local.localizedString(forLanguageCode: LocaLite.defaultLanguageCode ?? "")
+//        }
+//    }
     
     private init() {
 //        forceLTRViews = false
@@ -80,10 +95,17 @@ final class LocaLite {
 //        let str: NSAttributedStringKey = .shadow
     }
     
+    public static func setSelectedLang(with langCode: String) {
+//        let userData = User.getUserData(CoreDataUtils.sharedInstance.context)
+//        userData?.selectedLanguage = langCode
+//        CoreDataUtils.sharedInstance.saveContext()
+        setUserLang(langCode)
+        setNativeApplicationLanguage(with: langCode)
+    }
     
     
     // MARK: bundle settings
-    static func getBundleLanguages(_ langCode: String?) -> Bundle{
+    internal static func getBundle(for langCode: String?) -> Bundle{
 		var pathForLang: String = ""
 		
 		if langCode != nil {
@@ -108,17 +130,17 @@ final class LocaLite {
         return Bundle.main
     }
     
-    static func setBundleForLanguage(_ langCode: String? = nil){
-        bundleForLanguage = getBundleLanguages(langCode)
+    internal static func setBundleForLanguage(_ langCode: String? = nil){
+        bundleForLanguage = getBundle(for: langCode)
     }
     
     // MARK: user language settings
-    static func getCurrentNativeAppLanguage() -> String? {
+    internal static func getCurrentNativeAppLanguage() -> String? {
         return Locale.current.languageCode
 //        return (UserDefaults.standard.object(forKey: APPLE_APP_LANG_SUPPORT) as! NSArray)[0] as? String
     }
     
-    static func setNativeApplicationLanguage(with langCode: String) {
+    internal static func setNativeApplicationLanguage(with langCode: String) {
 //        let data = UserDefaults.standard
 //        data.set([langCode], forKey: APPLE_APP_LANG_SUPPORT)
 //        data.synchronize()
@@ -147,7 +169,7 @@ final class LocaLite {
     }
     
     // MARK: Utilities
-    static func isRtl() -> Bool {
+    internal static func isRtl() -> Bool {
         if getUserSelectedLang() == "he" {
             return true
         }
@@ -156,12 +178,12 @@ final class LocaLite {
         }
     }
     
-    static func getLanguageDisplayName(langCode: String) -> String?{
+    internal static func getLanguageDisplayName(langCode: String) -> String?{
         let local = Locale(identifier: langCode)
         return local.localizedString(forLanguageCode: langCode)
     }
     
-    static func getLanguageCodeForRegion() -> String{
+    internal static func getLanguageCodeForRegion() -> String{
         if let region = Locale.current.regionCode{
             switch region {
                 case "IL":
@@ -175,45 +197,27 @@ final class LocaLite {
         return "en"
     }
     
-    static func getUserSelectedLang() -> String {
+    internal static func getUserSelectedLang() -> String {
 //        let userData = User.getUserData(CoreDataUtils.sharedInstance.context)
         // if the value of userData (or it self) is nil -> return the default lang for user region..
         return ""//LocalizationUtils.getLanguageCodeForRegion()
     }
 //
-    static func setUserSelectedLang(with langCode: String) {
-//        let userData = User.getUserData(CoreDataUtils.sharedInstance.context)
-//        userData?.selectedLanguage = langCode
-//        CoreDataUtils.sharedInstance.saveContext()
-        setUserLang(langCode)
-        setNativeApplicationLanguage(with: langCode)
+    internal static func setUserLang(_ langCode: String?){
+        let data = UserDefaults.standard
+        data.set(langCode, forKey: LocaLite_SELECTED_LANG)
+        data.synchronize()
     }
 //
-    static func setUserLang(_ langCode: String?){
-//        let data = UserDefaults.standard
-//        data.set(langCode, forKey: USER_LANG)
-//        data.synchronize()
+    internal static func getUserLang() -> String? {
+        return LocaLiteUtils.getValueForKey(LocaLite_SELECTED_LANG) as? String
     }
 //
-//    static func getUserLang() -> String? {
-//        return getValueForKey(USER_LANG) as? String
-//    }
-//
-    static func getAvailableLanguages() -> [String]?{
-//        let userData = User.getUserData(CoreDataUtils.sharedInstance.context)
-//        if let languages = userData?.availableLanguages{
-//            return languages.components(separatedBy:",")
-//        }
+    internal static func getAvailableLanguages() -> [String]?{
         return nil
     }
 //
-    static func getDefaultAppLanguage() -> String?{
-//        let userData = User.getUserData(CoreDataUtils.sharedInstance.context)
-//        if let defaultLanguage = userData?.defaultLanguage{
-//            return defaultLanguage
-//        }
-        return nil
-    }
+
     
     // from appDelegate screen
 //    func setupLanguage() {
