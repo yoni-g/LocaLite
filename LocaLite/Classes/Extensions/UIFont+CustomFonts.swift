@@ -20,11 +20,11 @@ extension UIFont{
         }
     }
     
-    class func appRegularFontWith(size: CGFloat) -> UIFont{
+    class func appRegularFont(with size: CGFloat) -> UIFont{
         return  UIFont(name: appFontNameReg, size: size)!
     }
     
-    class func appBoldFontWith(size: CGFloat) -> UIFont{
+    class func appBoldFont(with size: CGFloat) -> UIFont{
         return  UIFont(name: appFontNameBold, size: size)!
     }
 

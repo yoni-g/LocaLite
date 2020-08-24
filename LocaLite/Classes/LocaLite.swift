@@ -47,7 +47,7 @@ final class LocaLite {
     private static var supportRTL: Bool?
     private static var forceLTRViews: [String]?
     private static var supportedLanguagesCodes: [String]?
-    private static var defaultLanguageCode: String? = "en"
+    private static var defaultLanguageCode: String = "en"
     private static var onLanguageChanged: (()->())?
     
     public var forceLTRViews: [String] {
@@ -62,10 +62,19 @@ final class LocaLite {
         }
     }
     
-    public var defaultAppLanguageCode: String?{
+    public var defaultAppLanguageCode: String{
         get{
             return LocaLite.defaultLanguageCode
         }
+    }
+    
+    public static func getUserSelectedLangCode() -> String {
+        guard let lang = LocaLiteUtils.getValueForKey(LocaLite_SELECTED_LANG) as? String else {
+            return LocaLite.defaultLanguageCode
+        }
+//        let userData = User.getUserData(CoreDataUtils.sharedInstance.context)
+        // if the value of userData (or it self) is nil -> return the default lang for user region..
+        return lang//LocalizationUtils.getLanguageCodeForRegion()
     }
     
 //    public var defaultAppLanguageLabel: String?{
@@ -106,14 +115,15 @@ final class LocaLite {
     
     // MARK: bundle settings
     internal static func getBundle(for langCode: String?) -> Bundle{
-		var pathForLang: String = ""
+		var pathForLang: String? = ""
 		
 		if langCode != nil {
 			pathForLang = langCode == "en" ? "Base" : langCode!
 		} else {
-			let userLang = getUserSelectedLang()
+			let userLang = getUserLangCode()
 //			let userDefaultsLang = AppData.getUserLang()
-			
+			// MARK: TODO: chnage to available languages
+            //       also need to validate that they have a .string file
 			if userLang == "he" || userLang == "ka" {
 				pathForLang = userLang
 //			} else if userLang == "" && userDefaultsLang != nil && userDefaultsLang!.contains("en") == false{
@@ -165,12 +175,11 @@ final class LocaLite {
 		}
 		UINavigationBar.appearance().semanticContentAttribute = isRtl() ? .forceRightToLeft : .forceLeftToRight
 		
-		
     }
     
     // MARK: Utilities
     internal static func isRtl() -> Bool {
-        if getUserSelectedLang() == "he" {
+        if getUserLangCode() == "he" {
             return true
         }
         else {
@@ -196,12 +205,6 @@ final class LocaLite {
         }
         return "en"
     }
-    
-    internal static func getUserSelectedLang() -> String {
-//        let userData = User.getUserData(CoreDataUtils.sharedInstance.context)
-        // if the value of userData (or it self) is nil -> return the default lang for user region..
-        return ""//LocalizationUtils.getLanguageCodeForRegion()
-    }
 //
     internal static func setUserLang(_ langCode: String?){
         let data = UserDefaults.standard
@@ -209,7 +212,7 @@ final class LocaLite {
         data.synchronize()
     }
 //
-    internal static func getUserLang() -> String? {
+    internal static func getUserLangCode() -> String? {
         return LocaLiteUtils.getValueForKey(LocaLite_SELECTED_LANG) as? String
     }
 //
