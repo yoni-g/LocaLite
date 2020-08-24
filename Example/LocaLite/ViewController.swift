@@ -18,8 +18,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        LocaLite.printName()
-        
+//        self.view.bounds.
+        //   LocaLite.printName()
+         
 //        languages = LocaLite.getAvailableLanguages() ?? []
 //        currentUserLanguage = LocaLite.getUserSelectedLang()
 //        currentSelection = currentUserLanguage
