@@ -16,8 +16,12 @@ class ViewController: UIViewController {
     var currentUserLanguage: String!
     var currentSelection: String!
     
+    @IBOutlet weak var testLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        testLabel.text = "Some stuff"
 //        self.view.bounds.
         //   LocaLite.printName()
          
@@ -28,7 +32,13 @@ class ViewController: UIViewController {
 //        LocaLite.setUserSelectedlangCodeLang(with: self.currentSelection)
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    @IBAction func buttonTapedAction(_ sender: Any) {
+        
+//        testLabel.relo
+//        self.viewToReload.layoutIfNeeded()
+//        testLabel.text = "Some stufffff"
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
