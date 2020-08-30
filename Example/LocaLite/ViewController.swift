@@ -22,6 +22,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         testLabel.text = "Some stuff"
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        label.text = "++++++"
+        label.textColor = .systemBlue
+        self.view.addSubview(label)
+        label.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+        label.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
+        
+        
 //        self.view.bounds.
         //   LocaLite.printName()
          
