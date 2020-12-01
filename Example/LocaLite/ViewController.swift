@@ -27,6 +27,14 @@ class ViewController: UIViewController {
 //
 //        LocaLite.setUserSelectedlangCodeLang(with: self.currentSelection)
         // Do any additional setup after loading the view, typically from a nib.
+//        let settings : [Localite.LocaLiteSettings] = [
+//            .supportRTL(false),
+//            .forceLTRViews(["SomeView"]),
+//            .supportedLanguagesCodes(["he","fr","en"]),
+//            .defaultLanguageCode("en")
+//        ]
+        
+//
     }
 
     override func didReceiveMemoryWarning() {

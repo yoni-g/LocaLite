@@ -9,7 +9,7 @@ import Foundation
 
 final internal class LocaLiteUtils {
     // helpers
-    static func getValueForKey(_ key: String) -> AnyObject? {
+    static func getValueFor(_ key: String) -> AnyObject? {
         let data = UserDefaults.standard
         return data.object(forKey: key) as AnyObject?
     }
