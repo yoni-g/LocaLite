@@ -1,3 +1,6 @@
+### 🚧🚧 Note: The project is currently under development! 🚧🚧
+---
+
 # LocaLite
 
 ### A tiny Localization SDK for iOS apps written in Swift
