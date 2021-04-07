@@ -85,7 +85,7 @@ final class LocaLite {
     // config settings
     private static var supportRTL: Bool?
     private static var forceLTRViews: [String]?
-    private static var supportedLanguagesCodes: [String]?
+    private static var supportedLanguagesCodes: [String]!
     private static var RTLLanguagesCodes: [String]?
     private static var defaultLanguageCode: String = "en"
     private static var onLanguageChanged: LanguageChangedHandler?
@@ -128,19 +128,31 @@ final class LocaLite {
     
     public static let shared = LocaLite()
     
-    public static func config(with settings: [LocaLiteSettings]){
-//        for config in configs{
-//            switch config {
-//            case .defaultLanguageCode(let defalut):
-//                print(defalut)
-//            default:
-//
-//            }
-//        }
+    public func config(with settings: [LocaLiteSettings]){
+//        validateRequiredSettings(settings)
+        for setting in settings{
+            switch setting {
+            case .defaultLanguageCode(let defalut):
+                print(defalut)
+            default: break
+
+            }
+        }
 //        let support =
 //        let str: NSAttributedStringKey = .shadow
+        
     }
     
+//    private func validateRequiredSettings(_ settings: [LocaLiteSettings]){
+//        settings.forEach { (setting) in
+//
+//        }
+//    }
+//
+//    func settingHasValue(of setting: LocaLiteSettings, in settings: [LocaLiteSettings]) -> Bool{
+//        return settings.filter { $0 == setting }.count > 0
+//    }
+//
     public static func setSelectedLang(with langCode: String) {
 //        let userData = User.getUserData(CoreDataUtils.sharedInstance.context)
 //        userData?.selectedLanguage = langCode
@@ -157,11 +169,11 @@ final class LocaLite {
 		if langCode != nil {
 			pathForLang = langCode == "en" ? "Base" : langCode!
 		} else {
-			let userLang = getUserLangCode()
+			if let userLang = getUserLangCode(),
+               supportedLanguagesCodes.contains(userLang){
 //			let userDefaultsLang = AppData.getUserLang()
-			// MARK: TODO: chnage to available languages
             //       also need to validate that they have a .string file
-			if userLang == "he" || userLang == "ka" {
+//            if supportedLanguagesCodes?.contains(userLang) ?? false {
 				pathForLang = userLang
 //			} else if userLang == "" && userDefaultsLang != nil && userDefaultsLang!.contains("en") == false{
 //				pathForLang = userDefaultsLang!
@@ -173,6 +185,8 @@ final class LocaLite {
         if let bundlePath = Bundle.main.path(forResource: pathForLang, ofType: "lproj"){
             let bundle = Bundle(path: bundlePath)
             return bundle!
+        } else {
+            assertionFailure("Bundle with path: '\(pathForLang ?? "")' not found!\n You need to add this bundle in your app's target")
         }
         return Bundle.main
     }
@@ -230,19 +244,19 @@ final class LocaLite {
         return local.localizedString(forLanguageCode: langCode)
     }
     
-    internal static func getLanguageCodeForRegion() -> String{
-        if let region = Locale.current.regionCode{
-            switch region {
-                case "IL":
-                    return "he"
-                case "GE":
-                    return "ka"
-                default:
-                    return "en"
-            }
-        }
-        return "en"
-    }
+//    internal static func getLanguageCodeForRegion() -> String{
+//        if let region = Locale.current.regionCode{
+//            switch region {
+//                case "IL":
+//                    return "he"
+//                case "GE":
+//                    return "ka"
+//                default:
+//                    return "en"
+//            }
+//        }
+//        return "en"
+//    }
 //
     internal static func setUserLang(_ langCode: String?){
         let data = UserDefaults.standard
