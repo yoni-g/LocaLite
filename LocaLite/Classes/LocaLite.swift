@@ -86,29 +86,24 @@ final class LocaLite {
     private static var supportRTL: Bool?
     private static var forceLTRViews: [String]?
     private static var supportedLanguagesCodes: [String]?
+    private static var RTLLanguagesCodes: [String]?
     private static var defaultLanguageCode: String = "en"
     private static var onLanguageChanged: LanguageChangedHandler?
     
     public var forceLTRViews: [String] {
-        get{
-            return LocaLite.forceLTRViews ?? []
-        }
+        LocaLite.forceLTRViews ?? []
     }
     
     public var bundleForLanguage: Bundle {
-        get{
-            return LocaLite.bundleForLanguage
-        }
+        LocaLite.bundleForLanguage
     }
     
     public var defaultAppLanguageCode: String{
-        get{
-            return LocaLite.defaultLanguageCode
-        }
+        LocaLite.defaultLanguageCode
     }
     
     public static func getUserSelectedLangCode() -> String {
-        guard let lang = LocaLiteUtils.getValueFor(LLUserDefaultKey.selectedLanguage.rawValue) as? String else {
+        guard let lang = LocaLiteUtils.getValue(for: LLUserDefaultKey.selectedLanguage.rawValue) as? String else {
             return LocaLite.defaultLanguageCode
         }
 //        let userData = User.getUserData(CoreDataUtils.sharedInstance.context)
@@ -222,13 +217,12 @@ final class LocaLite {
     
     // MARK: Utilities
     internal static func isRtl() -> Bool {
-        // TODO: add all RTL languages..
-        if getUserLangCode() == "he" {
+        if let rtlLangs = RTLLanguagesCodes,
+           let userLang = getUserLangCode(),
+                rtlLangs.contains(userLang) {
             return true
         }
-        else {
-            return false
-        }
+        return false
     }
     
     internal static func getLanguageDisplayName(langCode: String) -> String?{
@@ -257,7 +251,7 @@ final class LocaLite {
     }
 //
     internal static func getUserLangCode() -> String? {
-        return LocaLiteUtils.getValueFor(LLUserDefaultKey.selectedLanguage.rawValue) as? String
+        return LocaLiteUtils.getValue(for: LLUserDefaultKey.selectedLanguage.rawValue) as? String
     }
 //
     internal static func getAvailableLanguages() -> [String]?{
