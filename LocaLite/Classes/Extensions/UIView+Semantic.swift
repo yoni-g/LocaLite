@@ -11,7 +11,7 @@ import UIKit
 extension UIView{
     open override func awakeFromNib() {
         super.awakeFromNib()
-        if LocaLite.isRtl() && !isForceLTRSemanticView(){
+        if LocaLite.shared.isRtl() && !isForceLTRSemanticView(){
             self.semanticContentAttribute = .forceRightToLeft
         } else {
 //            print(self.accessibilityLabel)
@@ -24,11 +24,12 @@ extension UIView{
         if String(describing: type(of: self)) == "UITableView"{
             return false
         }
+        return LocaLite.shared.forceLTRViews?.contains(String(describing: type(of: self))) ?? false
         //print(self.accessibilityLabel)
-        guard let accessibilityLabel = self.accessibilityLabel else {
-            return LocaLite.shared.forceLTRViews.contains(String(describing: type(of: self)))
-        }
-
-        return LocaLite.shared.forceLTRViews.contains(accessibilityLabel)
+//        guard let accessibilityLabel = self.accessibilityLabel else {
+//            return LocaLite.shared.forceLTRViews.contains(String(describing: type(of: self)))
+//        }
+//
+//        return LocaLite.shared.forceLTRViews.contains(accessibilityLabel)
     }
 }

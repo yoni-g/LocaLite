@@ -83,28 +83,32 @@ final class LocaLite {
     private static var bundleForLanguage: Bundle = Bundle()
     
     // config settings
-    private static var supportRTL: Bool?
+    private var supportRTL: Bool?
     private static var forceLTRViews: [String]?
-    private static var supportedLanguagesCodes: [String]!
-    private static var RTLLanguagesCodes: [String]?
-    private static var defaultLanguageCode: String = "en"
-    private static var onLanguageChanged: LanguageChangedHandler?
+    private var supportedLanguagesCodes: [String]!
+    private var RTLLanguagesCodes: [String]?
+    private var defaultLanguageCode: String = "en"
+    private var onLanguageChanged: LanguageChangedHandler?
     
-    public var forceLTRViews: [String] {
-        LocaLite.forceLTRViews ?? []
+    public var forceLTRViews: [String]? {
+        get{
+            LocaLite.forceLTRViews ?? []
+        }
     }
     
     public var bundleForLanguage: Bundle {
-        LocaLite.bundleForLanguage
+        get{
+            LocaLite.bundleForLanguage
+        }
     }
     
     public var defaultAppLanguageCode: String{
-        LocaLite.defaultLanguageCode
+        defaultLanguageCode
     }
     
-    public static func getUserSelectedLangCode() -> String {
+    public func getUserSelectedLangCode() -> String {
         guard let lang = LocaLiteUtils.getValue(for: LLUserDefaultKey.selectedLanguage.rawValue) as? String else {
-            return LocaLite.defaultLanguageCode
+            return defaultLanguageCode
         }
 //        let userData = User.getUserData(CoreDataUtils.sharedInstance.context)
         // if the value of userData (or it self) is nil -> return the default lang for user region..
@@ -121,7 +125,7 @@ final class LocaLite {
     
     private init() {
         if let current = LocaLite.getCurrentNativeAppLanguage(){
-            LocaLite.defaultLanguageCode = current
+            defaultLanguageCode = current
         }
 //        forceLTRViews = false
     }
@@ -134,6 +138,8 @@ final class LocaLite {
             switch setting {
             case .defaultLanguageCode(let defalut):
                 print(defalut)
+            case .supportedLanguagesCodes(let languageCodes):
+                supportedLanguagesCodes = languageCodes
             default: break
 
             }
@@ -153,7 +159,7 @@ final class LocaLite {
 //        return settings.filter { $0 == setting }.count > 0
 //    }
 //
-    public static func setSelectedLang(with langCode: String) {
+    public func setSelectedLang(with langCode: String) {
 //        let userData = User.getUserData(CoreDataUtils.sharedInstance.context)
 //        userData?.selectedLanguage = langCode
 //        CoreDataUtils.sharedInstance.saveContext()
@@ -163,7 +169,7 @@ final class LocaLite {
     
     
     // MARK: bundle settings
-    internal static func getBundle(for langCode: String?) -> Bundle{
+    internal func getBundle(for langCode: String?) -> Bundle{
 		var pathForLang: String? = ""
 		
 		if langCode != nil {
@@ -191,8 +197,8 @@ final class LocaLite {
         return Bundle.main
     }
     
-    internal static func setBundleForLanguage(_ langCode: String? = nil){
-        bundleForLanguage = getBundle(for: langCode)
+    internal func setBundleForLanguage(_ langCode: String? = nil){
+        LocaLite.bundleForLanguage = getBundle(for: langCode)
     }
     
     // MARK: user language settings
@@ -201,7 +207,7 @@ final class LocaLite {
 //        return (UserDefaults.standard.object(forKey: APPLE_APP_LANG_SUPPORT) as! NSArray)[0] as? String
     }
     
-    internal static func setNativeApplicationLanguage(with langCode: String) {
+    internal func setNativeApplicationLanguage(with langCode: String) {
 //        let data = UserDefaults.standard
 //        data.set([langCode], forKey: APPLE_APP_LANG_SUPPORT)
 //        data.synchronize()
@@ -217,7 +223,7 @@ final class LocaLite {
 //        }
 //    }
     
-    static func setupAppFonts(){
+    func setupAppFonts(){
         //
         UITextField.appearance().substituteFontName = UIFont.appFontNameReg
         UILabel.appearance().substituteFontName     = UIFont.appFontNameReg
@@ -230,7 +236,7 @@ final class LocaLite {
     }
     
     // MARK: Utilities
-    internal static func isRtl() -> Bool {
+    internal func isRtl() -> Bool {
         if let rtlLangs = RTLLanguagesCodes,
            let userLang = getUserLangCode(),
                 rtlLangs.contains(userLang) {
@@ -258,17 +264,17 @@ final class LocaLite {
 //        return "en"
 //    }
 //
-    internal static func setUserLang(_ langCode: String?){
+    internal func setUserLang(_ langCode: String?){
         let data = UserDefaults.standard
         data.set(langCode, forKey: LLUserDefaultKey.selectedLanguage.rawValue)
         data.synchronize()
     }
 //
-    internal static func getUserLangCode() -> String? {
+    internal func getUserLangCode() -> String? {
         return LocaLiteUtils.getValue(for: LLUserDefaultKey.selectedLanguage.rawValue) as? String
     }
 //
-    internal static func getAvailableLanguages() -> [String]?{
+    internal func getAvailableLanguages() -> [String]?{
         return nil
     }
 //
