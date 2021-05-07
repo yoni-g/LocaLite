@@ -15,6 +15,7 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B3CDF2ED90928BDFED58EBCF /* Pods_LocaLite_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA7643543BC852469DEBA40 /* Pods_LocaLite_Tests.framework */; };
 		DED83A1F5E39468801084A34 /* Pods_LocaLite_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8CDF0E2E526E61F4E4FACF /* Pods_LocaLite_Example.framework */; };
+		F0B0BE28261F1A8C00484E46 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F0B0BE26261F1A8C00484E46 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,10 @@
 		C5D02D2CD5DC68B82A47C135 /* Pods-LocaLite_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocaLite_Example.debug.xcconfig"; path = "Target Support Files/Pods-LocaLite_Example/Pods-LocaLite_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DDA7643543BC852469DEBA40 /* Pods_LocaLite_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocaLite_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0D9AA26DB1A581460654DF /* Pods-LocaLite_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocaLite_Example.release.xcconfig"; path = "Target Support Files/Pods-LocaLite_Example/Pods-LocaLite_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F0B0BE13261F167000484E46 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Main.strings; sourceTree = "<group>"; };
+		F0B0BE14261F167000484E46 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		F0B0BE27261F1A8C00484E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F0B0BE2B261F1A9100484E46 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FC475EDB441ED50E609666C1 /* Pods-LocaLite_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocaLite_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LocaLite_Tests/Pods-LocaLite_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +112,7 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F0B0BE26261F1A8C00484E46 /* Localizable.strings */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -229,6 +235,7 @@
 				English,
 				en,
 				Base,
+				he,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
@@ -247,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				F0B0BE28261F1A8C00484E46 /* Localizable.strings in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -359,6 +367,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				607FACDA1AFB9204008FA782 /* Base */,
+				F0B0BE13261F167000484E46 /* he */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -367,8 +376,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				607FACDF1AFB9204008FA782 /* Base */,
+				F0B0BE14261F167000484E46 /* he */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		F0B0BE26261F1A8C00484E46 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0B0BE27261F1A8C00484E46 /* Base */,
+				F0B0BE2B261F1A9100484E46 /* he */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
