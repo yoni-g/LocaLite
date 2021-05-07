@@ -11,7 +11,7 @@ import UIKit
 extension UICollectionViewFlowLayout {
     
     open override var flipsHorizontallyInOppositeLayoutDirection: Bool {
-        if LocaLite.isRtl(){
+        if LocaLite.shared.isRtl(){
             return true
         }
         return false

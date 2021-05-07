@@ -1,5 +1,5 @@
 PODS:
-  - LocaLite (0.1.0)
+  - LocaLite (0.0.1)
 
 DEPENDENCIES:
   - LocaLite (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LocaLite: 11376708aeffe092b4458b4f941ac3b44037f4b6
+  LocaLite: cca871745abddbc75563f427c85cb47d72fdae25
 
 PODFILE CHECKSUM: 1d0bd896ce7893733ddaed9ad8afdd5c26a52239
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.0

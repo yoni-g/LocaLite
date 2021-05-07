@@ -9,8 +9,8 @@
 import UIKit
 
 extension UIImage{
-    func setLocalizedDirection() -> UIImage{
-        if(LocaLite.isRtl()){
+    public func setLocalizedDirection() -> UIImage{
+        if LocaLite.shared.isRtl() {
             if #available(iOS 10.0, *) {
                 return self.withHorizontallyFlippedOrientation()
             } else {

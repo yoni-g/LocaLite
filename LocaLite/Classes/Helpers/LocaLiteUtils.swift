@@ -9,8 +9,8 @@ import Foundation
 
 final internal class LocaLiteUtils {
     // helpers
-    static func getValueForKey(_ key: String) -> AnyObject? {
+    static func getValue(for key: LLUserDefaultKey) -> AnyObject? {
         let data = UserDefaults.standard
-        return data.object(forKey: key) as AnyObject?
+        return data.object(forKey: key.rawValue) as AnyObject?
     }
 }

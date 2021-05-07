@@ -30,7 +30,9 @@ A lightweight, easy-to-use Localization SDK for iOS apps written in Swift
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'LocaLite/Classes/**/*'
+  s.source_files = 'LocaLite/**/*'
+  
+  s.swift_versions = ["3.0", "4.0"]
   
   # s.resource_bundles = {
   #   'LocaLite' => ['LocaLite/Assets/*.png']

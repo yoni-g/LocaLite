@@ -9,11 +9,11 @@
 import Foundation
 
 extension String {
-    func localized(comment:String) -> String {
+    public func localized(comment: String) -> String {
         return NSLocalizedString(self, tableName: nil, bundle: LocaLite.shared.bundleForLanguage, value: "", comment: comment)
     }
     
-    func localized() -> String {
+    public func localized() -> String {
         return NSLocalizedString(self, tableName: nil, bundle: LocaLite.shared.bundleForLanguage, value: "", comment: "")
     }
 

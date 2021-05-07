@@ -11,24 +11,19 @@ import UIKit
 extension UIView{
     open override func awakeFromNib() {
         super.awakeFromNib()
-        if LocaLite.isRtl() && !isForceLTRSemanticView(){
+        if LocaLite.shared.isRtl() && !isForceLTRSemanticView(){
             self.semanticContentAttribute = .forceRightToLeft
         } else {
-//            print(self.accessibilityLabel)
             self.semanticContentAttribute = .forceLeftToRight
         }
     }
     
     private func isForceLTRSemanticView() -> Bool {
-        // TODO: 
-        if String(describing: type(of: self)) == "UITableView"{
-            return false
-        }
-        //print(self.accessibilityLabel)
-        guard let accessibilityLabel = self.accessibilityLabel else {
-            return LocaLite.shared.forceLTRViews.contains(String(describing: type(of: self)))
-        }
+//        if String(describing: type(of: self)) == "UITableView" || String(describing: type(of: self)) == "UIImageView"{
+//            return false
+//        }
 
-        return LocaLite.shared.forceLTRViews.contains(accessibilityLabel)
+        let viewName = self.restorationIdentifier ?? String(describing: type(of: self))
+        return LocaLite.shared.forceLTRViews?.contains(viewName) ?? false
     }
 }

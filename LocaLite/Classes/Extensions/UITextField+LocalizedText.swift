@@ -14,7 +14,7 @@ extension UITextField {
         if let placeholderText = self.placeholder, placeholderText != ""{
             self.placeholder = placeholderText.localized()
         }
-        if LocaLite.isRtl(){
+        if LocaLite.shared.isRtl(){
             self.textAlignment = .right
         } else {
             self.textAlignment = .left
