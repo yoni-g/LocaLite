@@ -7,133 +7,133 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11290FA8D8B924407DA45CBE8CF03049 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		1449AC6D1A5B597279DD94B806DCE63A /* Pods-LocaLite_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2709C30FEF5A5F0F7135FA96B70156B /* Pods-LocaLite_Example-dummy.m */; };
-		2834E47610ED3BF317F5C702247019C1 /* LocaLite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37C64E12DEC5D62A6C95B8F2F39DA865 /* LocaLite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C1C462285EC28AACE5C05C239B51F3C /* LocaLite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B622C661933D63A5FB7032C78A8E3C61 /* LocaLite-dummy.m */; };
-		65E211A2DC9F0BCA45C17A5AD55BEAFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		9F8D1DD3B0F9BB8D74889197C8B843B5 /* Pods-LocaLite_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 882B8FC8DD01EB5484AB5A7B2B058210 /* Pods-LocaLite_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7EFC2A56AFC2314E3C70E92137BDFA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		DD6FF7D1B43F44328709100BF14FD811 /* Pods-LocaLite_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA162DD1B319C1380DCB47B95E206D9 /* Pods-LocaLite_Tests-dummy.m */; };
-		F0AFEE0724F4324500268E2E /* LocaLiteUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AFEE0624F4324400268E2E /* LocaLiteUtils.swift */; };
-		F0F2512124BF54B200EDE4A4 /* UIBarButtonItem+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511824BF54B200EDE4A4 /* UIBarButtonItem+Localized.swift */; };
-		F0F2512224BF54B200EDE4A4 /* UISegmentedControl+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511924BF54B200EDE4A4 /* UISegmentedControl+LocalizedText.swift */; };
-		F0F2512324BF54B200EDE4A4 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511A24BF54B200EDE4A4 /* String+localized.swift */; };
-		F0F2512424BF54B200EDE4A4 /* UINavigationItem+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511B24BF54B200EDE4A4 /* UINavigationItem+Localized.swift */; };
-		F0F2512524BF54B200EDE4A4 /* UILabel+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511C24BF54B200EDE4A4 /* UILabel+LocalizedText.swift */; };
-		F0F2512624BF54B200EDE4A4 /* UITabBarItem+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511D24BF54B200EDE4A4 /* UITabBarItem+LocalizedText.swift */; };
-		F0F2512724BF54B200EDE4A4 /* UIImage+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511E24BF54B200EDE4A4 /* UIImage+Localization.swift */; };
-		F0F2512824BF54B200EDE4A4 /* UIButton+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2511F24BF54B200EDE4A4 /* UIButton+LocalizedText.swift */; };
-		F0F2512924BF54B200EDE4A4 /* UITextField+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2512024BF54B200EDE4A4 /* UITextField+LocalizedText.swift */; };
-		F0F2512D24BF555E00EDE4A4 /* LocaLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2512C24BF555E00EDE4A4 /* LocaLite.swift */; };
-		F0F2512F24BF55D600EDE4A4 /* UIView+Semantic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2512E24BF55D600EDE4A4 /* UIView+Semantic.swift */; };
-		F0F2513124BF560400EDE4A4 /* UICollectionViewFlowLayout+ScrollDir.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2513024BF560400EDE4A4 /* UICollectionViewFlowLayout+ScrollDir.swift */; };
-		F0F2513324BF582B00EDE4A4 /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F2513224BF582B00EDE4A4 /* UIFont+CustomFonts.swift */; };
-		F9E05BC20147EB3EBA3562C315525AE6 /* Pods-LocaLite_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A593ED39C1A9D9D621989C8C4376BC6 /* Pods-LocaLite_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E09DB228D7AE6343FB8053B632CBE1E /* Pods-LocaLite_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A593ED39C1A9D9D621989C8C4376BC6 /* Pods-LocaLite_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1377238F65568D7EBE19ECEFF0F34B1C /* UITabBarItem+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81610CAA56AD21FE1F45D84F0D3B8D74 /* UITabBarItem+LocalizedText.swift */; };
+		31937C3F2B96F7223EA2330A07CF9F45 /* LocaLiteUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C7A58DAE33572AC92CD643E21039A6 /* LocaLiteUtils.swift */; };
+		36A66013F91C80CA96F20417F0A7F312 /* UIView+Semantic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A308E10B76329E0EB8E128105F46482 /* UIView+Semantic.swift */; };
+		3BFC0F69D5493916E0EB9FD62095E67F /* UITextField+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B8FE62C0631A74180B18AAD88BB812 /* UITextField+LocalizedText.swift */; };
+		3E4310E279F5A3DAEEA8E8C4598B274D /* Pods-LocaLite_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FA162DD1B319C1380DCB47B95E206D9 /* Pods-LocaLite_Tests-dummy.m */; };
+		450B016F4728F6E920D2D06DBBDE4A51 /* UIButton+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D17859DF133513CDB8FEAB195752E0 /* UIButton+LocalizedText.swift */; };
+		50629C174E2522667559613F0ADA879E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		712E342239F962C5C18146F0BD1E0053 /* UILabel+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADD3AA8C4093C59AB5A546F26033FED /* UILabel+LocalizedText.swift */; };
+		8265E6BD90AC1E4BD6F954D0D96256E8 /* LocaLite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27463B4ED26224B56E04BD7F4B69115F /* LocaLite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		848B86D75F056D88D54514887102EA42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		AC38AE3711A3BB6F55805EF058964489 /* UICollectionViewFlowLayout+ScrollDir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EF63651984867EA7E52BF2FB0670A3 /* UICollectionViewFlowLayout+ScrollDir.swift */; };
+		ADD2B910FFDF1E3DF5CCAE45C30793B8 /* UIBarButtonItem+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F0B55571B97C470C7A0220827F500E /* UIBarButtonItem+Localized.swift */; };
+		B9AD9E66B77411C1630FE54CB775B061 /* UISegmentedControl+LocalizedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD1525AD2C81C05E4D8EB345437932 /* UISegmentedControl+LocalizedText.swift */; };
+		B9E0D82E4388CB0B0C09BE053B00B44E /* Pods-LocaLite_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 882B8FC8DD01EB5484AB5A7B2B058210 /* Pods-LocaLite_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB65DD911D7FCEF5D7BA9AC02782FFA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D9F4108534A3F4D30C5407E21FA91D4F /* UIImage+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0965C3C929978B3C47796AD7244E2B /* UIImage+Localization.swift */; };
+		DDD3A58A6E7551FE8CE007CE514341D3 /* String+localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09283F5598AEB2C38B5FD4C8B121457 /* String+localized.swift */; };
+		E14C3AD1EE815CB341155BD4B61E71A7 /* UINavigationItem+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1727200684E43C8B6AA2F8CCDAEF978 /* UINavigationItem+Localized.swift */; };
+		ECF9DE0D624B71E9394228F199FB77EF /* Pods-LocaLite_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2709C30FEF5A5F0F7135FA96B70156B /* Pods-LocaLite_Example-dummy.m */; };
+		EE2381BC573700D0793A5B482311DA38 /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD67402A3E4A449CA4A1198021086A7 /* UIFont+CustomFonts.swift */; };
+		EF8B6AAA4AEDF9177E60FEA313FE70E1 /* LocaLite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B64C91FE315FAE1A0F6C4846F64811E9 /* LocaLite-dummy.m */; };
+		F3CF2E464982F4C29736CE6286C30BD0 /* LocaLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136FB1121A59EDE7F40910F10F3245A6 /* LocaLite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7CF4C4AE9112148495122210397CFADE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AF93619BD81A7D57A087B100A82F641C;
-			remoteInfo = "Pods-LocaLite_Example";
-		};
-		EC09F732A6966D2185A5D1FB1C738632 /* PBXContainerItemProxy */ = {
+		47F7B7890F5667066E1B90FB135ACF5C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 28B85CCA742C0A3C55D032200E0E7863;
 			remoteInfo = LocaLite;
 		};
+		986CCE8A6EFDD2C002C8BAEA18A11FE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF93619BD81A7D57A087B100A82F641C;
+			remoteInfo = "Pods-LocaLite_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07C7A58DAE33572AC92CD643E21039A6 /* LocaLiteUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocaLiteUtils.swift; sourceTree = "<group>"; };
+		0A0965C3C929978B3C47796AD7244E2B /* UIImage+Localization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Localization.swift"; sourceTree = "<group>"; };
+		0ABD1525AD2C81C05E4D8EB345437932 /* UISegmentedControl+LocalizedText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+LocalizedText.swift"; sourceTree = "<group>"; };
+		136FB1121A59EDE7F40910F10F3245A6 /* LocaLite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocaLite.swift; path = LocaLite/Classes/LocaLite.swift; sourceTree = "<group>"; };
 		179CE61543C3A3C30CCF5AAD18F56149 /* Pods-LocaLite_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocaLite_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		21E03A7998F66AE513BD21C36DDF3FCC /* Pods-LocaLite_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocaLite_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		21F43A8BC3FD009DC04056A2271BC548 /* Pods-LocaLite_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocaLite_Tests.modulemap"; sourceTree = "<group>"; };
+		27463B4ED26224B56E04BD7F4B69115F /* LocaLite-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocaLite-umbrella.h"; sourceTree = "<group>"; };
 		2B3CD3E6CA33921B7F4006C9C6E53334 /* Pods-LocaLite_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocaLite_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2B6BC13719CF8CBC0474E00B4196BC0D /* Pods-LocaLite_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocaLite_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2CD67402A3E4A449CA4A1198021086A7 /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
 		2FA162DD1B319C1380DCB47B95E206D9 /* Pods-LocaLite_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocaLite_Tests-dummy.m"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		36DDFBDDBE9140BE15EF1071C7991EF4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		37C64E12DEC5D62A6C95B8F2F39DA865 /* LocaLite-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocaLite-umbrella.h"; sourceTree = "<group>"; };
 		3D5433BCD2D6E3EE365CC5AC5A0B21DA /* Pods-LocaLite_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocaLite_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4069C6222F0064E941767A84328EC665 /* LocaLite-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LocaLite-Info.plist"; sourceTree = "<group>"; };
+		41C7AD6C99DC9B4461E30557A4D8B0EB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		43B8FE62C0631A74180B18AAD88BB812 /* UITextField+LocalizedText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITextField+LocalizedText.swift"; sourceTree = "<group>"; };
 		63649EAEF5EA8DF6F8EC6906C96BB1FE /* Pods-LocaLite_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocaLite_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		66239C7B89F74721780B9541FF406DC8 /* LocaLite-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LocaLite-Info.plist"; sourceTree = "<group>"; };
 		67F3E5DA89EABC5E578D1486928126BD /* Pods-LocaLite_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocaLite_Example.modulemap"; sourceTree = "<group>"; };
-		7BB9A0DB05D62DF3454F3A8EF5C67507 /* LocaLite.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = LocaLite.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		7FFA2EB4957F925CE560AA244B0BCB4F /* LocaLite-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocaLite-prefix.pch"; sourceTree = "<group>"; };
+		69F0B55571B97C470C7A0220827F500E /* UIBarButtonItem+Localized.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Localized.swift"; sourceTree = "<group>"; };
+		6A308E10B76329E0EB8E128105F46482 /* UIView+Semantic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Semantic.swift"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76EF63651984867EA7E52BF2FB0670A3 /* UICollectionViewFlowLayout+ScrollDir.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+ScrollDir.swift"; sourceTree = "<group>"; };
+		77BFAAED4480ED47D9FB6C48828D1A19 /* LocaLite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocaLite.debug.xcconfig; sourceTree = "<group>"; };
+		7ADD3AA8C4093C59AB5A546F26033FED /* UILabel+LocalizedText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UILabel+LocalizedText.swift"; sourceTree = "<group>"; };
+		81610CAA56AD21FE1F45D84F0D3B8D74 /* UITabBarItem+LocalizedText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+LocalizedText.swift"; sourceTree = "<group>"; };
 		81E3F2E6F13FAFA5E2A60F0F6FD96A56 /* Pods-LocaLite_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocaLite_Example.release.xcconfig"; sourceTree = "<group>"; };
+		82A0FB4C61D3C6DDBD905AC0C987FC7E /* LocaLite-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocaLite-prefix.pch"; sourceTree = "<group>"; };
 		882B8FC8DD01EB5484AB5A7B2B058210 /* Pods-LocaLite_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocaLite_Tests-umbrella.h"; sourceTree = "<group>"; };
-		8B501815303AB479216C9BE0C8157795 /* LocaLite.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LocaLite.modulemap; sourceTree = "<group>"; };
-		9855A8910ED24F3983D0555F84CC2980 /* Pods_LocaLite_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocaLite_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9855A8910ED24F3983D0555F84CC2980 /* Pods_LocaLite_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocaLite_Tests.framework; path = "Pods-LocaLite_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A593ED39C1A9D9D621989C8C4376BC6 /* Pods-LocaLite_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocaLite_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B4F8947B1DF9983A1455349BB28BD1FC /* LocaLite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocaLite.release.xcconfig; sourceTree = "<group>"; };
-		B622C661933D63A5FB7032C78A8E3C61 /* LocaLite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LocaLite-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3D17859DF133513CDB8FEAB195752E0 /* UIButton+LocalizedText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+LocalizedText.swift"; sourceTree = "<group>"; };
+		AF34F15CD942CAAA7355721AB62D9F61 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B64C91FE315FAE1A0F6C4846F64811E9 /* LocaLite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LocaLite-dummy.m"; sourceTree = "<group>"; };
 		B7E15A5D085810CF4DF7A412D8A26BEA /* Pods-LocaLite_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocaLite_Tests-Info.plist"; sourceTree = "<group>"; };
-		BF3DDA7225FA6D0FC85F88285DC31448 /* Pods_LocaLite_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocaLite_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CCAE8346B21F7D36E97F51507C9CEA97 /* LocaLite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocaLite.debug.xcconfig; sourceTree = "<group>"; };
+		BF3DDA7225FA6D0FC85F88285DC31448 /* Pods_LocaLite_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocaLite_Example.framework; path = "Pods-LocaLite_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0EC57AD9BDE5E7BD5B88601946CE3AE /* LocaLite.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LocaLite.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E1174FFAD669F8FC7295AB76241121E6 /* Pods-LocaLite_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocaLite_Example-frameworks.sh"; sourceTree = "<group>"; };
-		E6C108BF6CB02B07E196CC012391E35E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E91F167EE394AFA047D800BE688934D1 /* LocaLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocaLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0AFEE0624F4324400268E2E /* LocaLiteUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaLiteUtils.swift; sourceTree = "<group>"; };
-		F0F2511824BF54B200EDE4A4 /* UIBarButtonItem+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Localized.swift"; sourceTree = "<group>"; };
-		F0F2511924BF54B200EDE4A4 /* UISegmentedControl+LocalizedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+LocalizedText.swift"; sourceTree = "<group>"; };
-		F0F2511A24BF54B200EDE4A4 /* String+localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
-		F0F2511B24BF54B200EDE4A4 /* UINavigationItem+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Localized.swift"; sourceTree = "<group>"; };
-		F0F2511C24BF54B200EDE4A4 /* UILabel+LocalizedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+LocalizedText.swift"; sourceTree = "<group>"; };
-		F0F2511D24BF54B200EDE4A4 /* UITabBarItem+LocalizedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+LocalizedText.swift"; sourceTree = "<group>"; };
-		F0F2511E24BF54B200EDE4A4 /* UIImage+Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Localization.swift"; sourceTree = "<group>"; };
-		F0F2511F24BF54B200EDE4A4 /* UIButton+LocalizedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+LocalizedText.swift"; sourceTree = "<group>"; };
-		F0F2512024BF54B200EDE4A4 /* UITextField+LocalizedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+LocalizedText.swift"; sourceTree = "<group>"; };
-		F0F2512C24BF555E00EDE4A4 /* LocaLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocaLite.swift; path = LocaLite/Classes/LocaLite.swift; sourceTree = "<group>"; };
-		F0F2512E24BF55D600EDE4A4 /* UIView+Semantic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Semantic.swift"; sourceTree = "<group>"; };
-		F0F2513024BF560400EDE4A4 /* UICollectionViewFlowLayout+ScrollDir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+ScrollDir.swift"; sourceTree = "<group>"; };
-		F0F2513224BF582B00EDE4A4 /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
+		E29672F6F823F7FB8C71DF43E8BA426E /* LocaLite.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LocaLite.modulemap; sourceTree = "<group>"; };
+		E5E556F42CEFB900FBA377B0D706D747 /* LocaLite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocaLite.release.xcconfig; sourceTree = "<group>"; };
+		E91F167EE394AFA047D800BE688934D1 /* LocaLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LocaLite.framework; path = LocaLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09283F5598AEB2C38B5FD4C8B121457 /* String+localized.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+localized.swift"; sourceTree = "<group>"; };
+		F1727200684E43C8B6AA2F8CCDAEF978 /* UINavigationItem+Localized.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Localized.swift"; sourceTree = "<group>"; };
 		F2709C30FEF5A5F0F7135FA96B70156B /* Pods-LocaLite_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocaLite_Example-dummy.m"; sourceTree = "<group>"; };
 		FCA3286FB4840D9150C56C6725060314 /* Pods-LocaLite_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocaLite_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FEEB2EDD63B139B5FD40358ABC8BCCAF /* Pods-LocaLite_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocaLite_Example-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1FD71B520633EFF7E0830E01179504EC /* Frameworks */ = {
+		018D6D26DCDDA4EEF9C343FDED31E11E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65E211A2DC9F0BCA45C17A5AD55BEAFC /* Foundation.framework in Frameworks */,
+				50629C174E2522667559613F0ADA879E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		384A4E43CAD24B813AE89C6956743EFE /* Frameworks */ = {
+		B5C9C56FED8DE85805A26027570F85B8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7EFC2A56AFC2314E3C70E92137BDFA5 /* Foundation.framework in Frameworks */,
+				BB65DD911D7FCEF5D7BA9AC02782FFA5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D25DC0C7D90D2F025C4B0127D0CD882A /* Frameworks */ = {
+		D146841095A0CE2C0EE404F947261D53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11290FA8D8B924407DA45CBE8CF03049 /* Foundation.framework in Frameworks */,
+				848B86D75F056D88D54514887102EA42 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0E35775F45AC07B420B4173B614C9695 /* LocaLite */ = {
+		10B86431B9B8D1D248BA5690453DD838 /* LocaLite */ = {
 			isa = PBXGroup;
 			children = (
-				F0AFEE0524F431D300268E2E /* Helpers */,
-				F0F2512C24BF555E00EDE4A4 /* LocaLite.swift */,
-				F0F2511724BF54B200EDE4A4 /* Extensions */,
-				78CAE34DDEA8EEAC004A76E6DA7D5E86 /* Pod */,
-				8687FF971261AC4878C6E1DC3B9AF062 /* Support Files */,
+				136FB1121A59EDE7F40910F10F3245A6 /* LocaLite.swift */,
+				B8E45C43A828544858FC6E01DB8FB482 /* Extensions */,
+				A8703F965ADF4F33630A2FC943F65F6D /* Helpers */,
+				A9A8208CEE38222822BF94A82A699D17 /* Pod */,
+				6ED29BEA1808370F3841CB27B4F3F57A /* Support Files */,
 			);
 			name = LocaLite;
 			path = ../..;
@@ -172,34 +172,24 @@
 			path = "Target Support Files/Pods-LocaLite_Example";
 			sourceTree = "<group>";
 		};
-		429EC7D9DE72870738F6BB4BF3987695 /* Development Pods */ = {
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				0E35775F45AC07B420B4173B614C9695 /* LocaLite */,
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
-			name = "Development Pods";
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		78CAE34DDEA8EEAC004A76E6DA7D5E86 /* Pod */ = {
+		6ED29BEA1808370F3841CB27B4F3F57A /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				36DDFBDDBE9140BE15EF1071C7991EF4 /* LICENSE */,
-				7BB9A0DB05D62DF3454F3A8EF5C67507 /* LocaLite.podspec */,
-				E6C108BF6CB02B07E196CC012391E35E /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		8687FF971261AC4878C6E1DC3B9AF062 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8B501815303AB479216C9BE0C8157795 /* LocaLite.modulemap */,
-				B622C661933D63A5FB7032C78A8E3C61 /* LocaLite-dummy.m */,
-				66239C7B89F74721780B9541FF406DC8 /* LocaLite-Info.plist */,
-				7FFA2EB4957F925CE560AA244B0BCB4F /* LocaLite-prefix.pch */,
-				37C64E12DEC5D62A6C95B8F2F39DA865 /* LocaLite-umbrella.h */,
-				CCAE8346B21F7D36E97F51507C9CEA97 /* LocaLite.debug.xcconfig */,
-				B4F8947B1DF9983A1455349BB28BD1FC /* LocaLite.release.xcconfig */,
+				E29672F6F823F7FB8C71DF43E8BA426E /* LocaLite.modulemap */,
+				B64C91FE315FAE1A0F6C4846F64811E9 /* LocaLite-dummy.m */,
+				4069C6222F0064E941767A84328EC665 /* LocaLite-Info.plist */,
+				82A0FB4C61D3C6DDBD905AC0C987FC7E /* LocaLite-prefix.pch */,
+				27463B4ED26224B56E04BD7F4B69115F /* LocaLite-umbrella.h */,
+				77BFAAED4480ED47D9FB6C48828D1A19 /* LocaLite.debug.xcconfig */,
+				E5E556F42CEFB900FBA377B0D706D747 /* LocaLite.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/LocaLite";
@@ -214,19 +204,50 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		A8703F965ADF4F33630A2FC943F65F6D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				07C7A58DAE33572AC92CD643E21039A6 /* LocaLiteUtils.swift */,
 			);
-			name = iOS;
+			name = Helpers;
+			path = LocaLite/Classes/Helpers;
+			sourceTree = "<group>";
+		};
+		A9A8208CEE38222822BF94A82A699D17 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				AF34F15CD942CAAA7355721AB62D9F61 /* LICENSE */,
+				E0EC57AD9BDE5E7BD5B88601946CE3AE /* LocaLite.podspec */,
+				41C7AD6C99DC9B4461E30557A4D8B0EB /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B8E45C43A828544858FC6E01DB8FB482 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F09283F5598AEB2C38B5FD4C8B121457 /* String+localized.swift */,
+				69F0B55571B97C470C7A0220827F500E /* UIBarButtonItem+Localized.swift */,
+				A3D17859DF133513CDB8FEAB195752E0 /* UIButton+LocalizedText.swift */,
+				76EF63651984867EA7E52BF2FB0670A3 /* UICollectionViewFlowLayout+ScrollDir.swift */,
+				2CD67402A3E4A449CA4A1198021086A7 /* UIFont+CustomFonts.swift */,
+				0A0965C3C929978B3C47796AD7244E2B /* UIImage+Localization.swift */,
+				7ADD3AA8C4093C59AB5A546F26033FED /* UILabel+LocalizedText.swift */,
+				F1727200684E43C8B6AA2F8CCDAEF978 /* UINavigationItem+Localized.swift */,
+				0ABD1525AD2C81C05E4D8EB345437932 /* UISegmentedControl+LocalizedText.swift */,
+				81610CAA56AD21FE1F45D84F0D3B8D74 /* UITabBarItem+LocalizedText.swift */,
+				43B8FE62C0631A74180B18AAD88BB812 /* UITextField+LocalizedText.swift */,
+				6A308E10B76329E0EB8E128105F46482 /* UIView+Semantic.swift */,
+			);
+			name = Extensions;
+			path = LocaLite/Classes/Extensions;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				429EC7D9DE72870738F6BB4BF3987695 /* Development Pods */,
+				E6396E77C59008BDE8EF4EFEFAFC4ED6 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				F86113048156761CDBF8FC853B001F12 /* Products */,
 				A7B6C2E9F16FF88DBCE4A976E2A56122 /* Targets Support Files */,
@@ -236,37 +257,17 @@
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F0AFEE0524F431D300268E2E /* Helpers */ = {
+		E6396E77C59008BDE8EF4EFEFAFC4ED6 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F0AFEE0624F4324400268E2E /* LocaLiteUtils.swift */,
+				10B86431B9B8D1D248BA5690453DD838 /* LocaLite */,
 			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		F0F2511724BF54B200EDE4A4 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				F0F2512E24BF55D600EDE4A4 /* UIView+Semantic.swift */,
-				F0F2511824BF54B200EDE4A4 /* UIBarButtonItem+Localized.swift */,
-				F0F2513224BF582B00EDE4A4 /* UIFont+CustomFonts.swift */,
-				F0F2511924BF54B200EDE4A4 /* UISegmentedControl+LocalizedText.swift */,
-				F0F2513024BF560400EDE4A4 /* UICollectionViewFlowLayout+ScrollDir.swift */,
-				F0F2511A24BF54B200EDE4A4 /* String+localized.swift */,
-				F0F2511B24BF54B200EDE4A4 /* UINavigationItem+Localized.swift */,
-				F0F2511C24BF54B200EDE4A4 /* UILabel+LocalizedText.swift */,
-				F0F2511D24BF54B200EDE4A4 /* UITabBarItem+LocalizedText.swift */,
-				F0F2511E24BF54B200EDE4A4 /* UIImage+Localization.swift */,
-				F0F2511F24BF54B200EDE4A4 /* UIButton+LocalizedText.swift */,
-				F0F2512024BF54B200EDE4A4 /* UITextField+LocalizedText.swift */,
-			);
-			name = Extensions;
-			path = LocaLite/Classes/Extensions;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		F86113048156761CDBF8FC853B001F12 /* Products */ = {
@@ -282,27 +283,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0F201F6C0007792C2146DCF54B52E7D8 /* Headers */ = {
+		0184FD51F9B08AE98825C39C11B871D2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F8D1DD3B0F9BB8D74889197C8B843B5 /* Pods-LocaLite_Tests-umbrella.h in Headers */,
+				B9E0D82E4388CB0B0C09BE053B00B44E /* Pods-LocaLite_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0F5714E40B1953F72E11A687A938D54E /* Headers */ = {
+		C12A8C1C011C26890F4F502E803CCAA3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E05BC20147EB3EBA3562C315525AE6 /* Pods-LocaLite_Example-umbrella.h in Headers */,
+				8265E6BD90AC1E4BD6F954D0D96256E8 /* LocaLite-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		50A54F96A74C34016FDC2AC8CE6B1D2E /* Headers */ = {
+		F5849FC4B5391AD56FFF5EE262747E6B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2834E47610ED3BF317F5C702247019C1 /* LocaLite-umbrella.h in Headers */,
+				0E09DB228D7AE6343FB8053B632CBE1E /* Pods-LocaLite_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,12 +312,12 @@
 /* Begin PBXNativeTarget section */
 		28B85CCA742C0A3C55D032200E0E7863 /* LocaLite */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B70A596115885C215AE6D7494A666AC8 /* Build configuration list for PBXNativeTarget "LocaLite" */;
+			buildConfigurationList = 2A32F4250E04F8D5E7C720024129FC93 /* Build configuration list for PBXNativeTarget "LocaLite" */;
 			buildPhases = (
-				50A54F96A74C34016FDC2AC8CE6B1D2E /* Headers */,
-				81DD6AB544CCDB964B9D0612547D949B /* Sources */,
-				384A4E43CAD24B813AE89C6956743EFE /* Frameworks */,
-				A514D1C84A80A7A677F5C3B517E66AC5 /* Resources */,
+				C12A8C1C011C26890F4F502E803CCAA3 /* Headers */,
+				244185511F9E989ED57B51BCEC37B73C /* Sources */,
+				D146841095A0CE2C0EE404F947261D53 /* Frameworks */,
+				E1170FB0938ED131853EB08ADF991B3D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -329,17 +330,17 @@
 		};
 		AF93619BD81A7D57A087B100A82F641C /* Pods-LocaLite_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4A112D9A4B4CA53C23F9D6E64B9229D8 /* Build configuration list for PBXNativeTarget "Pods-LocaLite_Example" */;
+			buildConfigurationList = 4BD3F046F5249906465EE1DA91861E1A /* Build configuration list for PBXNativeTarget "Pods-LocaLite_Example" */;
 			buildPhases = (
-				0F5714E40B1953F72E11A687A938D54E /* Headers */,
-				1656C5CCCB6047746B2BD936DCA0AA2E /* Sources */,
-				1FD71B520633EFF7E0830E01179504EC /* Frameworks */,
-				193E7A1CE731320D1329CA9439BA452F /* Resources */,
+				F5849FC4B5391AD56FFF5EE262747E6B /* Headers */,
+				26E021F95AFA562026636C8B38CF1A0F /* Sources */,
+				B5C9C56FED8DE85805A26027570F85B8 /* Frameworks */,
+				EEFAD1344D0D891971A1869D8551C54D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2CEFADD7503DD0345DE78D05EC4BE317 /* PBXTargetDependency */,
+				CE9DC2CB0057ECC0E1FC2712033648F9 /* PBXTargetDependency */,
 			);
 			name = "Pods-LocaLite_Example";
 			productName = "Pods-LocaLite_Example";
@@ -348,17 +349,17 @@
 		};
 		FE35F2867241A5B873A0DCAEE2E7C99C /* Pods-LocaLite_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B30459C5718B43CF7B211B4FD9B981AE /* Build configuration list for PBXNativeTarget "Pods-LocaLite_Tests" */;
+			buildConfigurationList = 29F091D0328820C5E6CCEA674A854DDE /* Build configuration list for PBXNativeTarget "Pods-LocaLite_Tests" */;
 			buildPhases = (
-				0F201F6C0007792C2146DCF54B52E7D8 /* Headers */,
-				EB328EF963483C96534788FC8F07597B /* Sources */,
-				D25DC0C7D90D2F025C4B0127D0CD882A /* Frameworks */,
-				C0E04285586DD2B9F30C4D42D18707DA /* Resources */,
+				0184FD51F9B08AE98825C39C11B871D2 /* Headers */,
+				9176BEB4DE45238112C1A9ED63B038DF /* Sources */,
+				018D6D26DCDDA4EEF9C343FDED31E11E /* Frameworks */,
+				2B8926B4AAFC548769DFC96778883A18 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				83F11037BB2A6463108B341D287276BF /* PBXTargetDependency */,
+				CBA31F331A60D596CAF0D93D0CE1230D /* PBXTargetDependency */,
 			);
 			name = "Pods-LocaLite_Tests";
 			productName = "Pods-LocaLite_Tests";
@@ -395,21 +396,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		193E7A1CE731320D1329CA9439BA452F /* Resources */ = {
+		2B8926B4AAFC548769DFC96778883A18 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A514D1C84A80A7A677F5C3B517E66AC5 /* Resources */ = {
+		E1170FB0938ED131853EB08ADF991B3D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0E04285586DD2B9F30C4D42D18707DA /* Resources */ = {
+		EEFAD1344D0D891971A1869D8551C54D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -419,134 +420,67 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1656C5CCCB6047746B2BD936DCA0AA2E /* Sources */ = {
+		244185511F9E989ED57B51BCEC37B73C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1449AC6D1A5B597279DD94B806DCE63A /* Pods-LocaLite_Example-dummy.m in Sources */,
+				EF8B6AAA4AEDF9177E60FEA313FE70E1 /* LocaLite-dummy.m in Sources */,
+				F3CF2E464982F4C29736CE6286C30BD0 /* LocaLite.swift in Sources */,
+				31937C3F2B96F7223EA2330A07CF9F45 /* LocaLiteUtils.swift in Sources */,
+				DDD3A58A6E7551FE8CE007CE514341D3 /* String+localized.swift in Sources */,
+				ADD2B910FFDF1E3DF5CCAE45C30793B8 /* UIBarButtonItem+Localized.swift in Sources */,
+				450B016F4728F6E920D2D06DBBDE4A51 /* UIButton+LocalizedText.swift in Sources */,
+				AC38AE3711A3BB6F55805EF058964489 /* UICollectionViewFlowLayout+ScrollDir.swift in Sources */,
+				EE2381BC573700D0793A5B482311DA38 /* UIFont+CustomFonts.swift in Sources */,
+				D9F4108534A3F4D30C5407E21FA91D4F /* UIImage+Localization.swift in Sources */,
+				712E342239F962C5C18146F0BD1E0053 /* UILabel+LocalizedText.swift in Sources */,
+				E14C3AD1EE815CB341155BD4B61E71A7 /* UINavigationItem+Localized.swift in Sources */,
+				B9AD9E66B77411C1630FE54CB775B061 /* UISegmentedControl+LocalizedText.swift in Sources */,
+				1377238F65568D7EBE19ECEFF0F34B1C /* UITabBarItem+LocalizedText.swift in Sources */,
+				3BFC0F69D5493916E0EB9FD62095E67F /* UITextField+LocalizedText.swift in Sources */,
+				36A66013F91C80CA96F20417F0A7F312 /* UIView+Semantic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81DD6AB544CCDB964B9D0612547D949B /* Sources */ = {
+		26E021F95AFA562026636C8B38CF1A0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0F2512F24BF55D600EDE4A4 /* UIView+Semantic.swift in Sources */,
-				F0F2512824BF54B200EDE4A4 /* UIButton+LocalizedText.swift in Sources */,
-				F0F2512724BF54B200EDE4A4 /* UIImage+Localization.swift in Sources */,
-				F0F2512524BF54B200EDE4A4 /* UILabel+LocalizedText.swift in Sources */,
-				F0F2513324BF582B00EDE4A4 /* UIFont+CustomFonts.swift in Sources */,
-				F0AFEE0724F4324500268E2E /* LocaLiteUtils.swift in Sources */,
-				2C1C462285EC28AACE5C05C239B51F3C /* LocaLite-dummy.m in Sources */,
-				F0F2512424BF54B200EDE4A4 /* UINavigationItem+Localized.swift in Sources */,
-				F0F2513124BF560400EDE4A4 /* UICollectionViewFlowLayout+ScrollDir.swift in Sources */,
-				F0F2512324BF54B200EDE4A4 /* String+localized.swift in Sources */,
-				F0F2512D24BF555E00EDE4A4 /* LocaLite.swift in Sources */,
-				F0F2512124BF54B200EDE4A4 /* UIBarButtonItem+Localized.swift in Sources */,
-				F0F2512624BF54B200EDE4A4 /* UITabBarItem+LocalizedText.swift in Sources */,
-				F0F2512224BF54B200EDE4A4 /* UISegmentedControl+LocalizedText.swift in Sources */,
-				F0F2512924BF54B200EDE4A4 /* UITextField+LocalizedText.swift in Sources */,
+				ECF9DE0D624B71E9394228F199FB77EF /* Pods-LocaLite_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB328EF963483C96534788FC8F07597B /* Sources */ = {
+		9176BEB4DE45238112C1A9ED63B038DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD6FF7D1B43F44328709100BF14FD811 /* Pods-LocaLite_Tests-dummy.m in Sources */,
+				3E4310E279F5A3DAEEA8E8C4598B274D /* Pods-LocaLite_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2CEFADD7503DD0345DE78D05EC4BE317 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LocaLite;
-			target = 28B85CCA742C0A3C55D032200E0E7863 /* LocaLite */;
-			targetProxy = EC09F732A6966D2185A5D1FB1C738632 /* PBXContainerItemProxy */;
-		};
-		83F11037BB2A6463108B341D287276BF /* PBXTargetDependency */ = {
+		CBA31F331A60D596CAF0D93D0CE1230D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-LocaLite_Example";
 			target = AF93619BD81A7D57A087B100A82F641C /* Pods-LocaLite_Example */;
-			targetProxy = 7CF4C4AE9112148495122210397CFADE /* PBXContainerItemProxy */;
+			targetProxy = 986CCE8A6EFDD2C002C8BAEA18A11FE4 /* PBXContainerItemProxy */;
+		};
+		CE9DC2CB0057ECC0E1FC2712033648F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LocaLite;
+			target = 28B85CCA742C0A3C55D032200E0E7863 /* LocaLite */;
+			targetProxy = 47F7B7890F5667066E1B90FB135ACF5C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0E53A53455BE8A5B40EC6C461C5F442F /* Release */ = {
+		17CC4340CA70B48F333345E3EB9599CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4F8947B1DF9983A1455349BB28BD1FC /* LocaLite.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LocaLite/LocaLite-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LocaLite/LocaLite-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 0.0.1;
-				MODULEMAP_FILE = "Target Support Files/LocaLite/LocaLite.modulemap";
-				PRODUCT_MODULE_NAME = LocaLite;
-				PRODUCT_NAME = LocaLite;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		26F85B7F94EC7714CC643A4257BC21EC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21E03A7998F66AE513BD21C36DDF3FCC /* Pods-LocaLite_Tests.debug.xcconfig */;
+			baseConfigurationReference = FCA3286FB4840D9150C56C6725060314 /* Pods-LocaLite_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LocaLite_Tests/Pods-LocaLite_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LocaLite_Tests/Pods-LocaLite_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		7C78D6C84BE68337E85274244DCEAA86 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81E3F2E6F13FAFA5E2A60F0F6FD96A56 /* Pods-LocaLite_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -569,82 +503,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		86FE919670521593FD0C30310E53539C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCAE8346B21F7D36E97F51507C9CEA97 /* LocaLite.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LocaLite/LocaLite-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LocaLite/LocaLite-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MARKETING_VERSION = 0.0.1;
-				MODULEMAP_FILE = "Target Support Files/LocaLite/LocaLite.modulemap";
-				PRODUCT_MODULE_NAME = LocaLite;
-				PRODUCT_NAME = LocaLite;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		946FDF56225D23582752FD7BAE7098C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B6BC13719CF8CBC0474E00B4196BC0D /* Pods-LocaLite_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-LocaLite_Tests/Pods-LocaLite_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-LocaLite_Tests/Pods-LocaLite_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+		431BA2B8298F0EE71735B9E0114E1955 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -667,6 +535,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -694,16 +563,50 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+		565D56E80C8DEC8B3E45E22AB188F57F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21E03A7998F66AE513BD21C36DDF3FCC /* Pods-LocaLite_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocaLite_Tests/Pods-LocaLite_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LocaLite_Tests/Pods-LocaLite_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		79759604D78320E712558F49DF19AA9F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -726,6 +629,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -764,12 +668,42 @@
 			};
 			name = Debug;
 		};
-		EB26F1ADFF689BF26798368CC4FDF9F9 /* Debug */ = {
+		A2ABAED678DA435A1808CACFCF4F4F76 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCA3286FB4840D9150C56C6725060314 /* Pods-LocaLite_Example.debug.xcconfig */;
+			baseConfigurationReference = E5E556F42CEFB900FBA377B0D706D747 /* LocaLite.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LocaLite/LocaLite-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LocaLite/LocaLite-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LocaLite/LocaLite.modulemap";
+				PRODUCT_MODULE_NAME = LocaLite;
+				PRODUCT_NAME = LocaLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A9C081850E1EC4A58417508A1A26B238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81E3F2E6F13FAFA5E2A60F0F6FD96A56 /* Pods-LocaLite_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -792,46 +726,110 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C0C6A9872BC163FF3FE5D7493BE2BD55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77BFAAED4480ED47D9FB6C48828D1A19 /* LocaLite.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LocaLite/LocaLite-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LocaLite/LocaLite-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LocaLite/LocaLite.modulemap";
+				PRODUCT_MODULE_NAME = LocaLite;
+				PRODUCT_NAME = LocaLite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
+		CA626B11A39E0AF27DBCC92BD1C10249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B6BC13719CF8CBC0474E00B4196BC0D /* Pods-LocaLite_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocaLite_Tests/Pods-LocaLite_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LocaLite_Tests/Pods-LocaLite_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		29F091D0328820C5E6CCEA674A854DDE /* Build configuration list for PBXNativeTarget "Pods-LocaLite_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				565D56E80C8DEC8B3E45E22AB188F57F /* Debug */,
+				CA626B11A39E0AF27DBCC92BD1C10249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A32F4250E04F8D5E7C720024129FC93 /* Build configuration list for PBXNativeTarget "LocaLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C6A9872BC163FF3FE5D7493BE2BD55 /* Debug */,
+				A2ABAED678DA435A1808CACFCF4F4F76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
-				B0087CB4594321EF41619F3181FE120E /* Release */,
+				79759604D78320E712558F49DF19AA9F /* Debug */,
+				431BA2B8298F0EE71735B9E0114E1955 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4A112D9A4B4CA53C23F9D6E64B9229D8 /* Build configuration list for PBXNativeTarget "Pods-LocaLite_Example" */ = {
+		4BD3F046F5249906465EE1DA91861E1A /* Build configuration list for PBXNativeTarget "Pods-LocaLite_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB26F1ADFF689BF26798368CC4FDF9F9 /* Debug */,
-				7C78D6C84BE68337E85274244DCEAA86 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B30459C5718B43CF7B211B4FD9B981AE /* Build configuration list for PBXNativeTarget "Pods-LocaLite_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				26F85B7F94EC7714CC643A4257BC21EC /* Debug */,
-				946FDF56225D23582752FD7BAE7098C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B70A596115885C215AE6D7494A666AC8 /* Build configuration list for PBXNativeTarget "LocaLite" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				86FE919670521593FD0C30310E53539C /* Debug */,
-				0E53A53455BE8A5B40EC6C461C5F442F /* Release */,
+				17CC4340CA70B48F333345E3EB9599CF /* Debug */,
+				A9C081850E1EC4A58417508A1A26B238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
