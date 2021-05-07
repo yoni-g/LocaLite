@@ -11,7 +11,6 @@ import UIKit
 extension UILabel{
     open override func awakeFromNib() {
         super.awakeFromNib()
-        print("Asdf")
         if let _text = self.text, _text != ""{
             self.text = _text.localized()
         }
