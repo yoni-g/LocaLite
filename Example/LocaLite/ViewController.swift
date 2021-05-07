@@ -20,15 +20,17 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        testLabel.text = "Some stuff"
+        testLabel.text = "some_text".localized()
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
-        label.text = "++++++"
+        label.text = LocaLite.shared.getUserSelectedLangCode()
         label.textColor = .systemBlue
         self.view.addSubview(label)
+        label.translatesAutoresizingMaskIntoConstraints = false
         label.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
         label.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        
+
         
 //        self.view.bounds.
         //   LocaLite.printName()
@@ -49,7 +51,11 @@ class ViewController: UIViewController {
 //
     }
     @IBAction func buttonTapedAction(_ sender: Any) {
+        let lang = LocaLite.shared.getUserSelectedLangCode() == "he" ? "en" : "he"
         
+        LocaLite.shared.setSelectedLang(lang, withHandler: {
+            print("chnaged")
+        }, runDefualtHandler: false)
 //        testLabel.relo
 //        self.viewToReload.layoutIfNeeded()
 //        testLabel.text = "Some stufffff"
