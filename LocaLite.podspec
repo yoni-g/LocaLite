@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LocaLite'
-  s.version          = '0.0.1'
+  s.version          = '0.9.0'
   s.summary          = 'A lite Localization SDK for iOS apps written in Swift'
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ A lightweight, easy-to-use Localization SDK for iOS apps written in Swift
 
   s.source_files = 'LocaLite/**/*'
   
-  s.swift_versions = ["3.0", "4.0"]
+  s.swift_versions = ["3.0", "4.0", "5.0"]
   
   # s.resource_bundles = {
   #   'LocaLite' => ['LocaLite/Assets/*.png']
