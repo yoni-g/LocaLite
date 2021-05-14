@@ -174,8 +174,6 @@ public final class LocaLite {
                 supportRTL = isSupporting
             case .onLanguageChanged(let handler):
                 languageChangeHanler = handler
-            default:
-                break
             }
             
         }
@@ -271,7 +269,7 @@ public final class LocaLite {
 //        UILabel.appearance().substituteFontName     = UIFont.appFontNameReg
 //        UILabel.appearance().substituteFontNameBold = UIFont.appFontNameBold
 		if let font = UIFont(name: UIFont.appFontNameReg, size: 16.5){
-			UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font : font], for: .normal)			
+            UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : font], for: .normal)
 		}
 		UINavigationBar.appearance().semanticContentAttribute = isRtl() ? .forceRightToLeft : .forceLeftToRight
         
