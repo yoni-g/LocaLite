@@ -50,7 +50,7 @@ public enum LocaLiteSetting {
     case forceLTRViews(_  viewNames: [String])
     case supportedLanguagesCodes(_  languages: [String])
     case defaultLanguageCode(_ defaultLanguage: String)
-    case onLanguageChanged(_ handler: ()->())
+    case onLanguageChanged(_ handler: LanguageChangedHandler)
 }
 
 extension LocaLiteSetting{
@@ -83,7 +83,8 @@ internal enum LLUserDefaultKey: String{
     case selectedLanguage = "LL_SelectedLanguage"
 }
 
-typealias LanguageChangedHandler = (_ newLanguage: String, _ error: Error)->()
+//typealias LanguageChangedHandler = (_ newLanguage: String, _ error: Error)->()
+public typealias LanguageChangedHandler = ()->Void
 
 public final class LocaLite {
 
@@ -96,7 +97,7 @@ public final class LocaLite {
     private var supportedLanguagesCodes: [String]!
     private var RTLLanguagesCodes: [String]? = ["he", "ar"]
     private var defaultLanguageCode: String = "en"
-    private var languageChangeHanler: (()->())?
+    private var languageChangeHandler: LanguageChangedHandler?
     
     public var forceLTRViews: [String]? {
         get{
@@ -175,7 +176,7 @@ public final class LocaLite {
             case .supportRTL(let isSupporting):
                 supportRTL = isSupporting
             case .onLanguageChanged(let handler):
-                languageChangeHanler = handler
+                languageChangeHandler = handler
             }
             
         }
@@ -203,7 +204,7 @@ public final class LocaLite {
         setNativeApplicationLanguage(with: langCode)
         handler?()
         if runDefualtHandler {
-            languageChangeHanler?()
+            languageChangeHandler?()
         }
     }
     
