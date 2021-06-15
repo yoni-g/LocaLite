@@ -48,7 +48,7 @@ import UIKit
 public enum LocaLiteSetting {
     case supportRTL(_  willSupport: Bool)
     case forceLTRViews(_  viewNames: [String])
-    case supportedLanguagesCodes(_  languages: [String])
+//    case supportedLanguagesCodes(_  languages: [String])
     case defaultLanguageCode(_ defaultLanguage: String)
     case onLanguageChanged(_ handler: LanguageChangedHandler)
 }
@@ -88,16 +88,22 @@ public typealias LanguageChangedHandler = ()->Void
 
 public final class LocaLite {
 
-    private static let APPLE_APP_LANG_SUPPORT = "AppleLanguages"
+    private let APPLE_APP_LANG_SUPPORT = "AppleLanguages"
     private static var bundleForLanguage: Bundle = Bundle()
     
     // config settings
     private var supportRTL: Bool = false
     private static var forceLTRViews: [String]?
     private var supportedLanguagesCodes: [String]!
-    private var RTLLanguagesCodes: [String]? = ["he", "ar"]
     private var defaultLanguageCode: String = "en"
     private var languageChangeHandler: LanguageChangedHandler?
+    
+    private let RTLLanguagesCodes: [String] = [
+        "he",
+        "ar",
+        "ar-AR",
+        "he-IL"
+    ]
     
     public var forceLTRViews: [String]? {
         get{
@@ -148,6 +154,7 @@ public final class LocaLite {
         if let current = LocaLite.getCurrentNativeAppLanguage(){
             defaultLanguageCode = current
         }
+        supportedLanguagesCodes = Bundle.main.localizations
         
 //        forceLTRViews = false
     }
@@ -169,8 +176,8 @@ public final class LocaLite {
             switch setting {
             case .defaultLanguageCode(let defalut):
                 defaultLanguageCode = defalut
-            case .supportedLanguagesCodes(let languageCodes):
-                supportedLanguagesCodes = languageCodes
+//            case .supportedLanguagesCodes(let languageCodes):
+//                supportedLanguagesCodes = languageCodes
             case .forceLTRViews(let viewNames):
                 LocaLite.forceLTRViews = viewNames
             case .supportRTL(let isSupporting):
@@ -221,10 +228,10 @@ public final class LocaLite {
     
     // MARK: bundle settings
     internal func getBundle(for langCode: String?) -> Bundle{
-		var pathForLang: String? = ""
+		var pathForLang = ""
 		
 		if langCode != nil {
-			pathForLang = langCode == "en" ? "Base" : langCode!
+            pathForLang = langCode?.contains("en") == true ? "Base" : langCode!
 		} else {
 			if let userLang = getUserLangCode(),
                supportedLanguagesCodes.contains(userLang){
@@ -281,9 +288,8 @@ public final class LocaLite {
     
     // MARK: Utilities
     public func isRtl() -> Bool {
-        if let rtlLangs = RTLLanguagesCodes,
-           let userLang = getUserLangCode(),
-                rtlLangs.contains(userLang) {
+        if let userLang = getUserLangCode(),
+           RTLLanguagesCodes.contains(userLang) {
             return true
         }
         return false
