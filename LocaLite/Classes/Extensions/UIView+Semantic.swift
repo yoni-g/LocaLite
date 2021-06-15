@@ -2,7 +2,7 @@
 //  UIView+Semantic.swift
 //  LocaLite
 //
-//  Created by Yoni770 on 20/06/2019.
+//  Created by Yonathan Goriachnick on 20/06/2019.
 //  Copyright © 2020 Yonathan Goriachnick All rights reserved.
 //
 
@@ -19,9 +19,6 @@ extension UIView{
     }
     
     private func isForceLTRSemanticView() -> Bool {
-//        if String(describing: type(of: self)) == "UITableView" || String(describing: type(of: self)) == "UIImageView"{
-//            return false
-//        }
 
         let viewName = self.restorationIdentifier ?? String(describing: type(of: self))
         return LocaLite.shared.forceLTRViews?.contains(viewName) ?? false

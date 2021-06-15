@@ -2,7 +2,7 @@
 //  UIImage+Localization.swift
 //  LocaLite
 //
-//  Created by Yoni on 15/07/2019.
+//  Created by Yonathan Goriachnick on 15/07/2019.
 //  Copyright © 2020 Yonathan Goriachnick. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  UIFont+CustomFonts.swift
 //  LocaLite
 //
-//  Created by Yoni770 on 05/06/2019.
+//  Created by Yonathan Goriachnick on 05/06/2019.
 //  Copyright © 2020 Yonathan Goriachnick. All rights reserved.
 //
 

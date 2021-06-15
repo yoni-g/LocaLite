@@ -2,7 +2,7 @@
 //  String+localized.swift
 //  LocaLite
 //
-//  Created by Ben Ohana on 15/06/2016.
+//  Created by Yonathan Goriachnick on 15/06/2016.
 //  Copyright © 2020 Yonathan Goriachnick. All rights reserved.
 //
 

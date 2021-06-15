@@ -2,7 +2,7 @@
 //  UITextField+LocalizedText.swift
 //  LocaLite
 //
-//  Created by Leah Vogel on 5/21/17.
+//  Created by Yonathan Goriachnick on 5/21/17.
 //  Copyright © 2020 Yonathan Goriachnick. All rights reserved.
 //
 
@@ -22,7 +22,9 @@ extension UITextField {
     }
     
     @objc var substituteFontName : String {
-        get { return self.font!.fontName }
+        get {
+            self.font!.fontName
+        }
         set {
             self.font = UIFont(name: newValue, size: (self.font?.pointSize)!)
         }
