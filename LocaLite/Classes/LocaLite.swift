@@ -2,7 +2,7 @@
 //  LocaLite.swift
 //  LocaLite
 //
-//  Created by Yoni770 on 30/05/2019.
+//  Created by Yonathan Goriachnick on 30/05/2019.
 //  Copyright © 2020 Yonathan Goriachnick. All rights reserved.
 //
 
@@ -13,33 +13,35 @@ import UIKit
 
 
 // MARK: LocaLite TODOs:
+// =====================
 
+//   MARK: 1. dev plan
+//   -----------------
+//   1. add all config/setup
+//   2. add validation function
+//   3. move helper methods to utils
+//   4. add default resetMainCtrl function
+//   4.1 need to add a storyboard name
+//   4.2 add option that developer can do his own reset views method
+//   5. add handler for Font name
+//   6.
 
-
-// MARK: 1. dev plan
-// 1. add all config/setup
-// 2. add validation function
-// 3. move helper methods to utils
-// 4. add default resetMainCtrl function
-// 4.1 need to add a storyboard name
-// 4.2 add option that developer can do his own reset views method
-// 5. add handler for Font name
-// 6.
-
-// MARK: 2. Readme.md:
-//    ----------------
+//   MARK: 2. Readme.md:
+//   ----------------
 //   1. add general pros using this librery
 //   2. add some examples with gifs etc.
 //   3. add how-to-use guide:
-//   3.1 need to add required and optional values for the lib
-//   3.2 need to describe all public methods and properties (need to choohs some framwork for that..)
-//   3.3 ?
+//   3.1. need to add required and optional values for the lib
+//   3.2. need to describe all public methods and properties (need to choohs some framwork for that..)
+//   3.3. ?
 
 //  MARK: 3. Dev\R&D tasks:
 //  ------------------------
 //  (Some unsolved problems..)
 //  1. need to think of solution when adding view programmatically
 //  2. need to find how to change the views without restariting the whole storyborads
+//  3. add support for localized .plist files > take permissions texts from "InfoPlist" files instead of the localized files (maybe by using the table prop in the localized func?? )
+//  4. add support for SwiftUI
 
 
 
