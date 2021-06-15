@@ -245,13 +245,17 @@ public final class LocaLite {
 				pathForLang = "Base"
 			}
 		}
-        
+
         if let bundlePath = Bundle.main.path(forResource: pathForLang, ofType: "lproj"){
+            let bundle = Bundle(path: bundlePath)
+            return bundle!
+        } else if pathForLang.contains("-"),
+            let bundlePath = Bundle.main.path(forResource: String(pathForLang.split(separator: "-").first ?? ""), ofType: "lproj"){
             let bundle = Bundle(path: bundlePath)
             return bundle!
         } else {
             setUserLang("en")
-            assertionFailure("Bundle with path: '\(pathForLang ?? "")' not found!\n You need to add this bundle in your app's target")
+            assertionFailure("Bundle with path: '\(pathForLang)' not found!\n You need to add this bundle in your app's target")
         }
         return Bundle.main
     }
