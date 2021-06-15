@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         LocaLite.shared.config(with: [
-            .supportedLanguagesCodes(["en","he","fr"]),
+//            .supportedLanguagesCodes(["en","he","fr"]),
             .supportRTL(true),
             .onLanguageChanged(reloadViewController)
         ])

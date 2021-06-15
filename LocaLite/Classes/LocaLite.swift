@@ -2,7 +2,7 @@
 //  LocaLite.swift
 //  LocaLite
 //
-//  Created by Yoni770 on 30/05/2019.
+//  Created by Yonathan Goriachnick on 30/05/2019.
 //  Copyright © 2020 Yonathan Goriachnick. All rights reserved.
 //
 
@@ -13,42 +13,44 @@ import UIKit
 
 
 // MARK: LocaLite TODOs:
+// =====================
 
+//   MARK: 1. dev plan
+//   -----------------
+//   1. add all config/setup
+//   2. add validation function
+//   3. move helper methods to utils
+//   4. add default resetMainCtrl function
+//   4.1 need to add a storyboard name
+//   4.2 add option that developer can do his own reset views method
+//   5. add handler for Font name
+//   6.
 
-
-// MARK: 1. dev plan
-// 1. add all config/setup
-// 2. add validation function
-// 3. move helper methods to utils
-// 4. add default resetMainCtrl function
-// 4.1 need to add a storyboard name
-// 4.2 add option that developer can do his own reset views method
-// 5. add handler for Font name
-// 6.
-
-// MARK: 2. Readme.md:
-//    ----------------
+//   MARK: 2. Readme.md:
+//   ----------------
 //   1. add general pros using this librery
 //   2. add some examples with gifs etc.
 //   3. add how-to-use guide:
-//   3.1 need to add required and optional values for the lib
-//   3.2 need to describe all public methods and properties (need to choohs some framwork for that..)
-//   3.3 ?
+//   3.1. need to add required and optional values for the lib
+//   3.2. need to describe all public methods and properties (need to choohs some framwork for that..)
+//   3.3. ?
 
 //  MARK: 3. Dev\R&D tasks:
 //  ------------------------
 //  (Some unsolved problems..)
 //  1. need to think of solution when adding view programmatically
 //  2. need to find how to change the views without restariting the whole storyborads
+//  3. add support for localized .plist files > take permissions texts from "InfoPlist" files instead of the localized files (maybe by using the table prop in the localized func?? )
+//  4. add support for SwiftUI
 
 
 
 public enum LocaLiteSetting {
     case supportRTL(_  willSupport: Bool)
     case forceLTRViews(_  viewNames: [String])
-    case supportedLanguagesCodes(_  languages: [String])
+//    case supportedLanguagesCodes(_  languages: [String])
     case defaultLanguageCode(_ defaultLanguage: String)
-    case onLanguageChanged(_ handler: ()->())
+    case onLanguageChanged(_ handler: LanguageChangedHandler)
 }
 
 extension LocaLiteSetting{
@@ -81,20 +83,27 @@ internal enum LLUserDefaultKey: String{
     case selectedLanguage = "LL_SelectedLanguage"
 }
 
-typealias LanguageChangedHandler = (_ newLanguage: String, _ error: Error)->()
+//typealias LanguageChangedHandler = (_ newLanguage: String, _ error: Error)->()
+public typealias LanguageChangedHandler = ()->Void
 
 public final class LocaLite {
 
-    private static let APPLE_APP_LANG_SUPPORT = "AppleLanguages"
+    private let APPLE_APP_LANG_SUPPORT = "AppleLanguages"
     private static var bundleForLanguage: Bundle = Bundle()
     
     // config settings
     private var supportRTL: Bool = false
     private static var forceLTRViews: [String]?
     private var supportedLanguagesCodes: [String]!
-    private var RTLLanguagesCodes: [String]? = ["he", "ar"]
     private var defaultLanguageCode: String = "en"
-    private var languageChangeHanler: (()->())?
+    private var languageChangeHandler: LanguageChangedHandler?
+    
+    private let RTLLanguagesCodes: [String] = [
+        "he",
+        "ar",
+        "ar-AR",
+        "he-IL"
+    ]
     
     public var forceLTRViews: [String]? {
         get{
@@ -145,6 +154,7 @@ public final class LocaLite {
         if let current = LocaLite.getCurrentNativeAppLanguage(){
             defaultLanguageCode = current
         }
+        supportedLanguagesCodes = Bundle.main.localizations
         
 //        forceLTRViews = false
     }
@@ -166,14 +176,14 @@ public final class LocaLite {
             switch setting {
             case .defaultLanguageCode(let defalut):
                 defaultLanguageCode = defalut
-            case .supportedLanguagesCodes(let languageCodes):
-                supportedLanguagesCodes = languageCodes
+//            case .supportedLanguagesCodes(let languageCodes):
+//                supportedLanguagesCodes = languageCodes
             case .forceLTRViews(let viewNames):
                 LocaLite.forceLTRViews = viewNames
             case .supportRTL(let isSupporting):
                 supportRTL = isSupporting
             case .onLanguageChanged(let handler):
-                languageChangeHanler = handler
+                languageChangeHandler = handler
             }
             
         }
@@ -201,14 +211,14 @@ public final class LocaLite {
         setNativeApplicationLanguage(with: langCode)
         handler?()
         if runDefualtHandler {
-            languageChangeHanler?()
+            languageChangeHandler?()
         }
     }
     
     
     internal func setNativeApplicationLanguage(with langCode: String) {
-//        let data = UserDefaults.standard
-//        data.set([langCode], forKey: APPLE_APP_LANG_SUPPORT)
+        let data = UserDefaults.standard
+        data.set([langCode], forKey: APPLE_APP_LANG_SUPPORT)
 //        data.synchronize()
 
         setBundleForLanguage(langCode)
@@ -218,10 +228,10 @@ public final class LocaLite {
     
     // MARK: bundle settings
     internal func getBundle(for langCode: String?) -> Bundle{
-		var pathForLang: String? = ""
+		var pathForLang = ""
 		
 		if langCode != nil {
-			pathForLang = langCode == "en" ? "Base" : langCode!
+            pathForLang = langCode?.contains("en") == true ? "Base" : langCode!
 		} else {
 			if let userLang = getUserLangCode(),
                supportedLanguagesCodes.contains(userLang){
@@ -235,13 +245,17 @@ public final class LocaLite {
 				pathForLang = "Base"
 			}
 		}
-        
+
         if let bundlePath = Bundle.main.path(forResource: pathForLang, ofType: "lproj"){
+            let bundle = Bundle(path: bundlePath)
+            return bundle!
+        } else if pathForLang.contains("-"),
+            let bundlePath = Bundle.main.path(forResource: String(pathForLang.split(separator: "-").first ?? ""), ofType: "lproj"){
             let bundle = Bundle(path: bundlePath)
             return bundle!
         } else {
             setUserLang("en")
-            assertionFailure("Bundle with path: '\(pathForLang ?? "")' not found!\n You need to add this bundle in your app's target")
+            assertionFailure("Bundle with path: '\(pathForLang)' not found!\n You need to add this bundle in your app's target")
         }
         return Bundle.main
     }
@@ -278,9 +292,8 @@ public final class LocaLite {
     
     // MARK: Utilities
     public func isRtl() -> Bool {
-        if let rtlLangs = RTLLanguagesCodes,
-           let userLang = getUserLangCode(),
-                rtlLangs.contains(userLang) {
+        if let userLang = getUserLangCode(),
+           RTLLanguagesCodes.contains(userLang) {
             return true
         }
         return false
