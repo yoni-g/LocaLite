@@ -217,8 +217,8 @@ public final class LocaLite {
     
     
     internal func setNativeApplicationLanguage(with langCode: String) {
-//        let data = UserDefaults.standard
-//        data.set([langCode], forKey: APPLE_APP_LANG_SUPPORT)
+        let data = UserDefaults.standard
+        data.set([langCode], forKey: APPLE_APP_LANG_SUPPORT)
 //        data.synchronize()
 
         setBundleForLanguage(langCode)
